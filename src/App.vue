@@ -1,6 +1,10 @@
 <template>
-  <TopBar />
-  <AppAbout />
+  <div class="app">
+    <TopBar />
+    <main class="main">
+      <AppAbout />
+    </main>
+  </div>
 </template>
 
 <script setup>
@@ -9,16 +13,12 @@ import AppAbout from "./components/AppAbout.vue";
 </script>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.main {
+  flex: 1;
 }
 </style>
