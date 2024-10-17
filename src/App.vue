@@ -1,9 +1,11 @@
 <template>
   <TopBar />
+  <AppAbout />
 </template>
 
 <script setup>
 import TopBar from "./components/TopBar.vue";
+import AppAbout from "./components/AppAbout.vue";
 </script>
 
 <style scoped>
