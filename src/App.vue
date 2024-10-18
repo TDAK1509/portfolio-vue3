@@ -20,5 +20,6 @@ import AppAbout from "./components/AppAbout.vue";
 }
 .main {
   flex: 1;
+  padding: 1em;
 }
 </style>
