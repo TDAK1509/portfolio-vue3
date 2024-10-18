@@ -2,14 +2,16 @@
   <div class="app">
     <TopBar />
     <main class="main">
-      <AppAbout />
+      <SectionAbout />
+      <SectionSkills />
     </main>
   </div>
 </template>
 
 <script setup>
 import TopBar from "./components/TopBar.vue";
-import AppAbout from "./components/AppAbout.vue";
+import SectionAbout from "./components/SectionAbout.vue";
+import SectionSkills from "./components/SectionSkills.vue";
 </script>
 
 <style scoped>

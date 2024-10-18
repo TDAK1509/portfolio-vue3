@@ -2,11 +2,8 @@
   <section class="section">
     <p class="hey">Hey 👋 I'm</p>
     <img class="avatar" src="@/assets/avatar.png" />
-
-    <div class="title">
-      <h1 class="h1">Khuong Tran</h1>
-      <p>TDD Web Developer</p>
-    </div>
+    <h1 class="h1">Khuong Tran</h1>
+    <p>TDD Web Developer</p>
 
     <div class="footer">
       <a
@@ -39,11 +36,6 @@ import SvgInstagram from "./SvgInstagram.vue";
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-}
-.title {
-  flex: 1;
-  text-align: center;
 }
 .avatar {
   width: 200px;
@@ -56,6 +48,7 @@ import SvgInstagram from "./SvgInstagram.vue";
   font-size: 2rem;
 }
 .footer {
+  margin-top: 2em;
   display: flex;
   gap: 0.7em;
   align-items: center;
