@@ -16,11 +16,13 @@
 import TopBar from "./components/TopBar.vue";
 import SectionAbout from "./components/SectionAbout.vue";
 import SectionSkills from "./components/SectionSkills.vue";
-import { onMounted } from "vue";
+import { onMounted, onBeforeUnmount } from "vue";
+
+let observer;
 
 onMounted(() => {
   const sections = document.querySelectorAll(".section");
-  const observer = new IntersectionObserver(
+  observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add("show");
@@ -28,12 +30,16 @@ onMounted(() => {
       });
     },
     {
-      threshold: 0,
+      threshold: 0.2,
     }
   );
   sections.forEach(section => {
     observer.observe(section);
   });
+});
+
+onBeforeUnmount(() => {
+  observer.disconnect();
 });
 </script>
 
@@ -42,6 +48,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-x: hidden;
 }
 .main {
   flex: 1;
