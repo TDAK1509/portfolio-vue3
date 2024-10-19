@@ -16,12 +16,16 @@
 
     <div class="block">
       <h2>Test-driven development (TDD)</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ut
-        nesciunt porro adipisci, dolor distinctio eos neque consequuntur
-        accusantium? Soluta veritatis neque laudantium harum non suscipit sequi
-        modi porro dolorum.
-      </p>
+      <ul class="ul">
+        <li class="li">
+          Before I fix a bug, I add test to replicate the bug, then write codes
+          to make it pass.
+        </li>
+        <li class="li">
+          Whenever working on a new feature, I always try to write tests
+          according to the specifications, then write codes to make them pass.
+        </li>
+      </ul>
     </div>
 
     <div class="block">
@@ -59,6 +63,9 @@ import SectionTitle from "@/components/SectionTitle.vue";
 }
 .li {
   list-style-type: disc;
+}
+.block {
+  margin-bottom: 1.2em;
 }
 .subblock {
   margin-bottom: 1em;
