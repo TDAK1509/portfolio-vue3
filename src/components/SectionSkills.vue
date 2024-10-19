@@ -3,33 +3,31 @@
     <SectionTitle>
       <template #title>Services I offer</template>
       <template #subtitle>
-        <div>
-          My coding style:
-          <ul class="ul">
-            <li class="li">Test-driven development (TDD)</li>
-            <li class="li">One function does one thing</li>
-            <li class="li">Use function name to comment on codes</li>
-          </ul>
-        </div>
+        <div>Lorem ipsum</div>
       </template>
     </SectionTitle>
 
     <div class="polygon-container">
       <div class="polygon">
-        <h4 class="polygon-h4">Test-driven development (TDD)</h4>
-        <p class="polygon-p">
-          Write tests first, then write codes to make them pass.
-        </p>
+        <h4 class="polygon-title">Test-driven development (TDD)</h4>
+        <div class="polygon-content">
+          <ul class="ul">
+            <li class="li">Write test</li>
+            <li class="li">Make test pass</li>
+            <li class="li">Beautify the codes</li>
+            <li class="li">Repeat</li>
+          </ul>
+        </div>
       </div>
 
       <div class="polygon">
-        <h4 class="polygon-h4">Single responsibility</h4>
-        <p class="polygon-p">One function only does one thing.</p>
+        <h4 class="polygon-title">Single responsibility</h4>
+        <p class="polygon-content">One function only does one thing.</p>
       </div>
 
       <div class="polygon">
-        <h4 class="polygon-h4">Long names over commenting</h4>
-        <p class="polygon-p">
+        <h4 class="polygon-title">Long names over commenting</h4>
+        <p class="polygon-content">
           Rarely write comments on codes, use meaningful names instead.
         </p>
       </div>
@@ -99,7 +97,7 @@ import SectionTitle from "@/components/SectionTitle.vue";
 
 <style scoped>
 .ul {
-  margin-left: 1em;
+  text-align: left;
 }
 .li {
   list-style-type: disc;
@@ -154,10 +152,13 @@ import SectionTitle from "@/components/SectionTitle.vue";
   grid-column-start: 2;
   grid-row-start: 3;
 }
-.polygon-h4 {
+.polygon-title {
   font-size: 0.9rem;
 }
-.polygon-p {
+.polygon-content {
+  font-size: 0.8rem;
+}
+.polygon-content .li {
   font-size: 0.8rem;
 }
 </style>
