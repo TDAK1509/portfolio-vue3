@@ -30,24 +30,43 @@
 
     <div class="block">
       <h2>One function does one thing</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ut
-        nesciunt porro adipisci, dolor distinctio eos neque consequuntur
-        accusantium? Soluta veritatis neque laudantium harum non suscipit sequi
-        modi porro dolorum.
-      </p>
+      <div class="subblock">
+        <h3 class="h3">I don't do</h3>
+        <img
+          class="code-image"
+          src="@/assets/bad-one-function-does-one-thing.png"
+          alt="Bad one function does one thing"
+        />
+      </div>
+
+      <div class="subblock">
+        <h3 class="h3">I do</h3>
+        <img
+          class="code-image"
+          src="@/assets/good-one-function-does-one-thing.png"
+          alt="Good one function does one thing"
+        />
+      </div>
     </div>
 
     <div class="block">
       <h2>Use function name to comment on codes</h2>
       <div class="subblock">
-        <h3 class="h3">What I see other developers do</h3>
-        <img class="code-image" src="@/assets/bad.png" alt="Bad code" />
+        <h3 class="h3">I don't do</h3>
+        <img
+          class="code-image"
+          src="@/assets/bad-comment-codes.png"
+          alt="Bad comments on codes"
+        />
       </div>
 
       <div class="subblock">
-        <h3 class="h3">What I do</h3>
-        <img class="code-image" src="@/assets/good.png" alt="Good code" />
+        <h3 class="h3">I do</h3>
+        <img
+          class="code-image"
+          src="@/assets/good-comment-codes.png"
+          alt="Good comments on codes"
+        />
       </div>
     </div>
   </section>
