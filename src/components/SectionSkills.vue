@@ -14,6 +14,27 @@
       </template>
     </SectionTitle>
 
+    <div class="polygon-container">
+      <div class="polygon">
+        <h4 class="polygon-h4">Test-driven development (TDD)</h4>
+        <p class="polygon-p">
+          Write tests first, then write codes to make them pass.
+        </p>
+      </div>
+
+      <div class="polygon">
+        <h4 class="polygon-h4">Single responsibility</h4>
+        <p class="polygon-p">One function only does one thing.</p>
+      </div>
+
+      <div class="polygon">
+        <h4 class="polygon-h4">Long names over commenting</h4>
+        <p class="polygon-p">
+          Rarely write comments on codes, use meaningful names instead.
+        </p>
+      </div>
+    </div>
+
     <div class="block">
       <h2>Test-driven development (TDD)</h2>
       <ul class="ul">
@@ -95,5 +116,48 @@ import SectionTitle from "@/components/SectionTitle.vue";
 .code-image {
   display: block;
   width: min(80%, 300px);
+}
+.polygon-container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(5, 100px);
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
+  row-gap: 20px;
+  margin-top: 96px;
+}
+.polygon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  grid-row-end: span 3;
+  grid-column-end: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  text-align: center;
+}
+.polygon:nth-child(1) {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.polygon:nth-child(2) {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+.polygon:nth-child(3) {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+.polygon-h4 {
+  font-size: 0.9rem;
+}
+.polygon-p {
+  font-size: 0.8rem;
 }
 </style>

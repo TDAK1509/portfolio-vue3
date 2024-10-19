@@ -49,6 +49,8 @@ onBeforeUnmount(() => {
 .main {
   flex: 1;
   padding: 1em 1.5em;
+  max-width: 800px;
+  margin: auto;
 }
 .section {
   opacity: 0;
