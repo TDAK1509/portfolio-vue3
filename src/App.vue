@@ -58,7 +58,7 @@ onBeforeUnmount(() => {
 .show {
   opacity: 1;
   transform: translateX(0);
-  transition-duration: 0.2s;
+  transition-duration: 0.25s;
   transition-timing-function: ease-in;
 }
 </style>

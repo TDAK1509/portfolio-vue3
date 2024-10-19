@@ -37,12 +37,12 @@
     <div class="block">
       <h2>Use function name to comment on codes</h2>
       <div class="subblock">
-        <h3>What I see other developers do</h3>
+        <h3 class="h3">What I see other developers do</h3>
         <img class="code-image" src="@/assets/bad.png" alt="Bad code" />
       </div>
 
       <div class="subblock">
-        <h3>What I do</h3>
+        <h3 class="h3">What I do</h3>
         <img class="code-image" src="@/assets/good.png" alt="Good code" />
       </div>
     </div>
@@ -62,6 +62,9 @@ import SectionTitle from "@/components/SectionTitle.vue";
 }
 .subblock {
   margin-bottom: 1em;
+}
+.h3 {
+  color: var(--color-subtitle);
 }
 .code-image {
   display: block;
