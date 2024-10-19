@@ -26,7 +26,7 @@ onMounted(() => {
       });
     },
     {
-      threshold: 0.2,
+      threshold: 0.1,
     }
   );
   sections.forEach(section => {
@@ -53,6 +53,7 @@ onBeforeUnmount(() => {
 .section {
   opacity: 0;
   transform: translateX(150px);
+  margin-top: 2.5em;
 }
 .show {
   opacity: 1;

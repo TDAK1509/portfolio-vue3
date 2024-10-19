@@ -48,7 +48,7 @@ import SvgInstagram from "./SvgInstagram.vue";
   font-size: 2rem;
 }
 .footer {
-  margin-top: 2em;
+  margin-top: 1.5em;
   display: flex;
   gap: 0.7em;
   align-items: center;
