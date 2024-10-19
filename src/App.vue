@@ -4,10 +4,6 @@
     <main class="main">
       <SectionAbout class="section" />
       <SectionSkills class="section" />
-      <SectionSkills class="section" />
-      <SectionSkills class="section" />
-      <SectionSkills class="section" />
-      <SectionSkills class="section" />
     </main>
   </div>
 </template>
@@ -52,7 +48,7 @@ onBeforeUnmount(() => {
 }
 .main {
   flex: 1;
-  padding: 1em;
+  padding: 1em 1.5em;
 }
 .section {
   opacity: 0;
