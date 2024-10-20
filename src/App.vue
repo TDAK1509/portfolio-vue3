@@ -51,7 +51,15 @@ onBeforeUnmount(() => {
   padding: 1em 1.5em;
   max-width: 800px;
   margin: auto;
+  width: 100%;
 }
+@media only screen and (max-width: 600px) {
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .section {
   opacity: 0;
   transform: translateX(150px);
