@@ -74,7 +74,15 @@ function toggleSubBlock(type) {
 
 function toggleSubBlockByRef(element) {
   if (!element) return;
+
+  const isExpanding = !element.classList.contains("show");
   element.classList.toggle("show");
+
+  if (isExpanding) {
+    setTimeout(() => {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 300);
+  }
 }
 </script>
 
