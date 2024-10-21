@@ -3,6 +3,7 @@
     <TopBar />
     <main class="main">
       <SectionAbout class="section" />
+      <SectionSkills class="section" />
       <SectionCodingStyle class="section" />
     </main>
   </div>
@@ -12,6 +13,7 @@
 import TopBar from "./components/TopBar.vue";
 import SectionAbout from "./components/SectionAbout.vue";
 import SectionCodingStyle from "./components/SectionCodingStyle.vue";
+import SectionSkills from "./components/SectionSkills.vue";
 import { onMounted, onBeforeUnmount } from "vue";
 
 let observer;
