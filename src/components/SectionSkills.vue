@@ -1,8 +1,7 @@
 <template>
   <section class="section">
     <SectionTitle>
-      <template #title>My skills</template>
-      <template #subtitle> I'm not scared of CSS 😅. </template>
+      <template #title>Technologies I worked with</template>
     </SectionTitle>
 
     <div class="block">
@@ -73,22 +72,21 @@ const experiencedTechnologies = [
   "docker",
   "git",
   "github-actions",
-  "bash",
 ];
 
 const mediocreTechnologies = [
   "django",
   "aws",
   "linux",
+  "bash",
   "digital-ocean",
   "firebase",
   "mysql",
   "nginx",
   "terraform",
   "firebase",
+  "react",
 ];
-
-const weakTechnologies = ["flutter", "php", "react"];
 
 function getImageSrc(name) {
   return new URL(`../assets/technologies/${name}.svg`, import.meta.url).href;
