@@ -9,121 +9,13 @@
       <h3>Experienced</h3>
 
       <div class="block-content">
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/vue.svg"
-            alt="vue"
-          />
-          <div>Vue</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/javascript.svg"
-            alt="javascript"
-          />
-          <div>Javascript</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/typescript.svg"
-            alt="typescript"
-          />
-          <div>Typescript</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/css.svg"
-            alt="css"
-          />
-          <div>CSS</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/html.svg"
-            alt="html"
-          />
-          <div>HTML</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/nodejs.svg"
-            alt="nodejs"
-          />
-          <div>NodeJs</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/eslint.svg"
-            alt="eslint"
-          />
-          <div>Eslint</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/jest.svg"
-            alt="jest"
-          />
-          <div>Jest</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/cypress.svg"
-            alt="cypress"
-          />
-          <div>Cypress</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/docker.svg"
-            alt="docker"
-          />
-          <div>Docker</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/git.svg"
-            alt="git"
-          />
-          <div>Git</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/github.svg"
-            alt="github"
-          />
-          <div>Github Actions</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/bash.svg"
-            alt="bash"
-          />
-          <div>Bash</div>
+        <div
+          class="technology"
+          v-for="name in experiencedTechnologies"
+          :key="name"
+        >
+          <img class="technology-icon" :src="getImageSrc(name)" :alt="name" />
+          <div class="technology-text">{{ name.split("-").join(" ") }}</div>
         </div>
 
         <div class="technology">
@@ -189,6 +81,26 @@
 
 <script setup>
 import SectionTitle from "@/components/SectionTitle.vue";
+
+const experiencedTechnologies = [
+  "vue",
+  "javascript",
+  "typescript",
+  "css",
+  "html",
+  "nodejs",
+  "eslint",
+  "jest",
+  "cypress",
+  "docker",
+  "git",
+  "github-actions",
+  "bash",
+];
+
+function getImageSrc(name) {
+  return new URL(`../assets/technologies/${name}.svg`, import.meta.url).href;
+}
 </script>
 
 <style scoped>
@@ -217,5 +129,8 @@ import SectionTitle from "@/components/SectionTitle.vue";
 .technology-icon {
   width: 24px;
   height: 24px;
+}
+.technology-text {
+  text-transform: capitalize;
 }
 </style>
