@@ -33,40 +33,13 @@
       <h3>Mediocre</h3>
 
       <div class="block-content">
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/django.svg"
-            alt="django"
-          />
-          <div>Django</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/aws.svg"
-            alt="aws"
-          />
-          <div>AWS</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/linux.svg"
-            alt="linux"
-          />
-          <div>Linux</div>
-        </div>
-
-        <div class="technology">
-          <img
-            class="technology-icon"
-            src="@/assets/technologies/digital-ocean.svg"
-            alt="digital-ocean"
-          />
-          <div>Digital Ocean</div>
+        <div
+          class="technology"
+          v-for="name in mediocreTechnologies"
+          :key="name"
+        >
+          <img class="technology-icon" :src="getImageSrc(name)" :alt="name" />
+          <div class="technology-text">{{ name.split("-").join(" ") }}</div>
         </div>
       </div>
     </div>
@@ -74,7 +47,12 @@
     <div class="block">
       <h3>Tried before</h3>
 
-      <div class="block-content">vue</div>
+      <div class="block-content">
+        <div class="technology" v-for="name in weakTechnologies" :key="name">
+          <img class="technology-icon" :src="getImageSrc(name)" :alt="name" />
+          <div class="technology-text">{{ name.split("-").join(" ") }}</div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -97,6 +75,20 @@ const experiencedTechnologies = [
   "github-actions",
   "bash",
 ];
+
+const mediocreTechnologies = [
+  "django",
+  "aws",
+  "linux",
+  "digital-ocean",
+  "firebase",
+  "mysql",
+  "nginx",
+  "terraform",
+  "firebase",
+];
+
+const weakTechnologies = ["flutter", "php", "react"];
 
 function getImageSrc(name) {
   return new URL(`../assets/technologies/${name}.svg`, import.meta.url).href;
