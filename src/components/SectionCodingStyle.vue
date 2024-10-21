@@ -114,6 +114,9 @@ function toggleSubBlockByRef(element) {
   justify-content: center;
   position: relative;
 }
+.block.block--expandable {
+  cursor: pointer;
+}
 .block--expandable::after {
   content: "Click to see more";
   text-decoration: underline;
