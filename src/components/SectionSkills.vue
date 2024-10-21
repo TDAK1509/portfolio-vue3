@@ -15,7 +15,10 @@
       </ul>
     </div>
 
-    <div class="block" @click="toggleSubBlock('single-responsibility')">
+    <div
+      class="block block--expandable"
+      @click="toggleSubBlock('single-responsibility')"
+    >
       <h4>Single responsibility</h4>
       <p>One function only does one thing.</p>
     </div>
@@ -35,7 +38,7 @@
       />
     </div>
 
-    <div class="block" @click="toggleSubBlock('long-names')">
+    <div class="block block--expandable" @click="toggleSubBlock('long-names')">
       <h4>Long names over commenting</h4>
       <p>Rarely write comments on codes, use meaningful names instead.</p>
     </div>
@@ -109,6 +112,16 @@ function toggleSubBlockByRef(element) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.block--expandable::after {
+  content: "Click to see more";
+  text-decoration: underline;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 1.5em;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .sub-block {
   text-align: left;
