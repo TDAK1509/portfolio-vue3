@@ -42,17 +42,6 @@
         </div>
       </div>
     </div>
-
-    <div class="block">
-      <h3>Tried before</h3>
-
-      <div class="block-content">
-        <div class="technology" v-for="name in weakTechnologies" :key="name">
-          <img class="technology-icon" :src="getImageSrc(name)" :alt="name" />
-          <div class="technology-text">{{ name.split("-").join(" ") }}</div>
-        </div>
-      </div>
-    </div>
   </section>
 </template>
 

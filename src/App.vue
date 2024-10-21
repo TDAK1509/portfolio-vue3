@@ -19,7 +19,7 @@ import { onMounted, onBeforeUnmount } from "vue";
 let observer;
 
 onMounted(() => {
-  const sections = document.querySelectorAll(".section");
+  const sections = document.querySelectorAll(".block");
   observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -61,13 +61,17 @@ onBeforeUnmount(() => {
     padding-right: 0;
   }
 }
-
 .section {
-  opacity: 0;
-  transform: translateX(150px);
   margin-top: 2.5em;
 }
-.show {
+</style>
+
+<style>
+.block {
+  opacity: 0;
+  transform: translateX(150px);
+}
+.block.show {
   opacity: 1;
   transform: translateX(0);
   transition-duration: 0.25s;
