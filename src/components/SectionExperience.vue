@@ -100,6 +100,7 @@ import SectionTitle from "@/components/SectionTitle.vue";
 .content {
   position: relative;
   display: block;
+  padding-top: 2em;
 }
 .content::before {
   content: "";
