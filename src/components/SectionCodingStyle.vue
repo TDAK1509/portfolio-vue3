@@ -7,11 +7,11 @@
     <div class="block">
       <h4>Test-driven development (TDD)</h4>
 
-      <ul class="ul">
-        <li class="li">Write test</li>
-        <li class="li">Make test pass</li>
-        <li class="li">Beautify the codes</li>
-        <li class="li">Repeat</li>
+      <ul class="disc">
+        <li>Write test</li>
+        <li>Make test pass</li>
+        <li>Beautify the codes</li>
+        <li>Repeat</li>
       </ul>
     </div>
 
@@ -93,13 +93,6 @@ function toggleSubBlockByRef(element) {
 .section {
   text-align: center;
   padding: 0 1em;
-}
-.ul {
-  text-align: left;
-  margin-left: 1em;
-}
-.li {
-  list-style-type: disc;
 }
 .block {
   background-color: black;
