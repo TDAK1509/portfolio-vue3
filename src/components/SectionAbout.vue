@@ -8,8 +8,18 @@
     <div class="footer">
       <a
         class="social-media"
+        href="mailto:dbcgdhh@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <SvgEmail />
+      </a>
+
+      <a
+        class="social-media"
         href="https://github.com/TDAK1509"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <SvgGithub />
       </a>
@@ -18,6 +28,7 @@
         class="social-media"
         href="https://www.instagram.com/tdak1509/"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <SvgInstagram />
       </a>
@@ -26,6 +37,7 @@
 </template>
 
 <script setup>
+import SvgEmail from "./SvgEmail.vue";
 import SvgGithub from "./SvgGithub.vue";
 import SvgInstagram from "./SvgInstagram.vue";
 </script>
@@ -48,7 +60,7 @@ import SvgInstagram from "./SvgInstagram.vue";
   font-size: 2rem;
 }
 .footer {
-  margin-top: 1.5em;
+  margin-top: 0.5em;
   display: flex;
   gap: 0.7em;
   align-items: center;
