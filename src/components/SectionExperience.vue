@@ -61,7 +61,7 @@
         <div class="block-content">
           <h5 class="position">Unemployment</h5>
           <div class="description">
-            <p>Playing poker for a living.</p>
+            <p>Do something else not related to coding.</p>
           </div>
         </div>
       </div>
