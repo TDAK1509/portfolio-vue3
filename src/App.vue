@@ -3,6 +3,7 @@
     <TopBar />
     <main class="main">
       <SectionAbout class="section" />
+      <SectionServices class="section" />
       <SectionSkills class="section" />
       <SectionCodingStyle class="section" />
       <SectionExperience class="section" />
@@ -15,6 +16,7 @@ import TopBar from "./components/TopBar.vue";
 import SectionAbout from "./components/SectionAbout.vue";
 import SectionCodingStyle from "./components/SectionCodingStyle.vue";
 import SectionExperience from "./components/SectionExperience.vue";
+import SectionServices from "./components/SectionServices.vue";
 import SectionSkills from "./components/SectionSkills.vue";
 import { onMounted, onBeforeUnmount } from "vue";
 
