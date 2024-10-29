@@ -4,7 +4,7 @@
       <template #title>What I can do for you</template>
     </SectionTitle>
 
-    <div class="card">
+    <div class="card animation-slide-in">
       <img class="card-image" src="@/assets/architecture.svg" />
       <h5>Lead engineer</h5>
       <ul class="ul disc">
@@ -23,7 +23,7 @@
       </ul>
     </div>
 
-    <div class="card">
+    <div class="card animation-slide-in">
       <img class="card-image" src="@/assets/code.svg" />
       <h5>Senior frontend development</h5>
       <ul class="ul disc">
@@ -42,6 +42,10 @@
 
 <script setup>
 import SectionTitle from "@/components/SectionTitle.vue";
+import { useIntersectionObserver } from "@/composables/useIntersectionObserver";
+
+const animationClassName = "card";
+useIntersectionObserver(animationClassName);
 </script>
 
 <style scoped>
