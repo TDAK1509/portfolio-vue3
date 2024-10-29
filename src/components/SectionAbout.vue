@@ -12,7 +12,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <SvgEmail />
+        <img src="@/assets/email.svg" />
       </a>
 
       <a
@@ -21,7 +21,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <SvgGithub />
+        <img src="@/assets/github2.svg" />
       </a>
 
       <a
@@ -30,17 +30,11 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <SvgInstagram />
+        <img src="@/assets/instagram.svg" />
       </a>
     </div>
   </section>
 </template>
-
-<script setup>
-import SvgEmail from "./SvgEmail.vue";
-import SvgGithub from "./SvgGithub.vue";
-import SvgInstagram from "./SvgInstagram.vue";
-</script>
 
 <style scoped>
 .section {

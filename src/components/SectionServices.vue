@@ -5,7 +5,7 @@
     </SectionTitle>
 
     <div class="card">
-      <SvgArchitecture class="card-image" />
+      <img class="card-image" src="@/assets/architecture.svg" />
       <h5>Lead engineer</h5>
       <ul class="ul disc">
         <li class="li">Decide architecture</li>
@@ -24,7 +24,7 @@
     </div>
 
     <div class="card">
-      <SvgCode class="card-image" />
+      <img class="card-image" src="@/assets/code.svg" />
       <h5>Senior frontend development</h5>
       <ul class="ul disc">
         <li class="li">Create automated testing systems</li>
@@ -42,8 +42,6 @@
 
 <script setup>
 import SectionTitle from "@/components/SectionTitle.vue";
-import SvgArchitecture from "@/components/SvgArchitecture.vue";
-import SvgCode from "@/components/SvgCode.vue";
 </script>
 
 <style scoped>
