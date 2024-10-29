@@ -18,31 +18,6 @@ import SectionCodingStyle from "./components/SectionCodingStyle.vue";
 import SectionExperience from "./components/SectionExperience.vue";
 import SectionServices from "./components/SectionServices.vue";
 import SectionSkills from "./components/SectionSkills.vue";
-import { onMounted, onBeforeUnmount } from "vue";
-
-let observer;
-
-onMounted(() => {
-  // const sections = document.querySelectorAll(".block");
-  // observer = new IntersectionObserver(
-  //   entries => {
-  //     entries.forEach(entry => {
-  //       if (entry.isIntersecting) entry.target.classList.add("show");
-  //       else entry.target.classList.remove("show");
-  //     });
-  //   },
-  //   {
-  //     threshold: 0.1,
-  //   }
-  // );
-  // sections.forEach(section => {
-  //   observer.observe(section);
-  // });
-});
-
-onBeforeUnmount(() => {
-  observer.disconnect();
-});
 </script>
 
 <style scoped>
@@ -68,17 +43,4 @@ onBeforeUnmount(() => {
 .section {
   margin-top: 2.5em;
 }
-</style>
-
-<style>
-/* .block {
-  opacity: 0;
-  transform: translateX(150px);
-}
-.block.show {
-  opacity: 1;
-  transform: translateX(0);
-  transition-duration: 0.25s;
-  transition-timing-function: ease-in;
-} */
 </style>

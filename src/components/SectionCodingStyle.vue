@@ -4,7 +4,7 @@
       <template #title>My coding style</template>
     </SectionTitle>
 
-    <div class="block">
+    <div class="block animation-slide-in">
       <h4>Test-driven development (TDD)</h4>
 
       <ul class="disc">
@@ -16,7 +16,7 @@
     </div>
 
     <div
-      class="block block--expandable"
+      class="block block--expandable animation-slide-in"
       @click="toggleSubBlock('single-responsibility')"
     >
       <h4>Single responsibility</h4>
@@ -38,7 +38,10 @@
       />
     </div>
 
-    <div class="block block--expandable" @click="toggleSubBlock('long-names')">
+    <div
+      class="block block--expandable animation-slide-in"
+      @click="toggleSubBlock('long-names')"
+    >
       <h4>Long names over commenting</h4>
       <p>Rarely write comments on codes, use meaningful names instead.</p>
     </div>
@@ -62,7 +65,11 @@
 
 <script setup>
 import SectionTitle from "@/components/SectionTitle.vue";
+import { useIntersectionObserver } from "@/composables/useIntersectionObserver";
 import { ref } from "vue";
+
+const animationClassName = "block";
+useIntersectionObserver(animationClassName);
 
 const singleResponsibilitySubBlock = ref();
 const longNamesSubBlock = ref();
@@ -129,17 +136,6 @@ function toggleSubBlockByRef(element) {
 .sub-block.show {
   transition: max-height 0.5s ease-in;
   max-height: 1000px;
-}
-
-@keyframes slideDown {
-  0% {
-    opacity: 0;
-    height: 0;
-  }
-  100% {
-    opacity: 1;
-    height: 100%;
-  }
 }
 .sub-block-image {
   width: 100%;

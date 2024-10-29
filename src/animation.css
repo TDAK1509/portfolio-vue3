@@ -1,0 +1,12 @@
+@media only screen and (min-width: 601px) {
+  .animation-slide-in {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  .animation-slide-in.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+  }
+}

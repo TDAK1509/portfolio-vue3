@@ -4,7 +4,7 @@
       <template #title>Technologies I worked with</template>
     </SectionTitle>
 
-    <div class="block">
+    <div class="block animation-slide-in">
       <h3>Experienced</h3>
 
       <div class="block-content">
@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="block">
+    <div class="block animation-slide-in">
       <h3>Mediocre</h3>
 
       <div class="block-content">
@@ -47,6 +47,10 @@
 
 <script setup>
 import SectionTitle from "@/components/SectionTitle.vue";
+import { useIntersectionObserver } from "@/composables/useIntersectionObserver";
+
+const animationClassName = "block";
+useIntersectionObserver(animationClassName);
 
 const experiencedTechnologies = [
   "vue",
