@@ -67,7 +67,9 @@ useIntersectionObserver(animationClassName);
 .ul {
   margin-top: 1em;
 }
-.li {
-  font-size: 0.8rem;
+@media only screen and (max-width: 600px) {
+  .li {
+    font-size: 0.8rem;
+  }
 }
 </style>
