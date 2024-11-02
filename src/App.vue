@@ -2,11 +2,11 @@
   <div class="app">
     <TopBar />
     <main class="main">
-      <SectionAbout id="#about" class="app-section" />
-      <SectionServices id="#services" class="app-section" />
-      <SectionSkills id="#skills" class="app-section" />
-      <SectionCodingStyle id="#coding-style" class="app-section" />
-      <SectionExperience id="#experience" class="app-section" />
+      <SectionAbout id="about" class="app-section" />
+      <SectionServices id="services" class="app-section" />
+      <SectionSkills id="skills" class="app-section" />
+      <SectionCodingStyle id="coding-style" class="app-section" />
+      <SectionExperience id="experience" class="app-section" />
     </main>
   </div>
 </template>
@@ -28,8 +28,7 @@ onMounted(() => {
     entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const elementId = entry.target.id.slice(1);
-          highlightMenu(elementId);
+          highlightMenu(entry.target.id);
         }
       });
     },
