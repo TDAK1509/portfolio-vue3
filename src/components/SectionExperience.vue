@@ -125,7 +125,7 @@ import SectionTitle from "@/components/SectionTitle.vue";
   height: 16px;
   top: 7px;
   left: -6px;
-  background-color: black;
+  background-color: var(--color-primary);
 }
 .block::after {
   content: "";
