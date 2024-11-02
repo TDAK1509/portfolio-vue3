@@ -2,11 +2,11 @@
   <div class="app">
     <TopBar />
     <main class="main">
-      <SectionAbout class="section" />
-      <SectionServices class="section" />
-      <SectionSkills class="section" />
-      <SectionCodingStyle class="section" />
-      <SectionExperience class="section" />
+      <SectionAbout id="#about" class="app-section" />
+      <SectionServices id="#services" class="app-section" />
+      <SectionSkills id="#skills" class="app-section" />
+      <SectionCodingStyle id="#coding-style" class="app-section" />
+      <SectionExperience id="#experience" class="app-section" />
     </main>
   </div>
 </template>
@@ -18,6 +18,44 @@ import SectionCodingStyle from "./components/SectionCodingStyle.vue";
 import SectionExperience from "./components/SectionExperience.vue";
 import SectionServices from "./components/SectionServices.vue";
 import SectionSkills from "./components/SectionSkills.vue";
+import { onMounted, onBeforeUnmount } from "vue";
+
+let observer;
+
+onMounted(() => {
+  const sections = document.querySelectorAll(".app-section");
+  observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const elementId = entry.target.id.slice(1);
+          highlightMenu(elementId);
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+    }
+  );
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+});
+
+function highlightMenu(elementId) {
+  const element = document.querySelector(`[data-menu-observer='${elementId}']`);
+  if (element) {
+    const allMenuItems = document.querySelectorAll("#menu .li");
+    allMenuItems.forEach(item => {
+      item.classList.remove("active");
+    });
+    element.classList.add("active");
+  }
+}
+
+onBeforeUnmount(() => {
+  observer.disconnect();
+});
 </script>
 
 <style scoped>
@@ -40,7 +78,7 @@ import SectionSkills from "./components/SectionSkills.vue";
     padding-right: 0;
   }
 }
-.section {
+.app-section {
   margin-top: 2.5em;
 }
 </style>

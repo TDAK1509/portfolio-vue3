@@ -10,9 +10,21 @@
 
     <nav id="menu" class="nav">
       <ul class="ul">
-        <li class="li"><a class="a" href="#about">About</a></li>
-        <li class="li"><a class="a" href="#skills">Skills</a></li>
-        <li class="li"><a class="a" href="#projects">Projects</a></li>
+        <li class="li" data-menu-observer="about">
+          <a class="a" href="#about">About</a>
+        </li>
+        <li class="li" data-menu-observer="services">
+          <a class="a" href="#services">Services</a>
+        </li>
+        <li class="li" data-menu-observer="skills">
+          <a class="a" href="#skills">Skills</a>
+        </li>
+        <li class="li" data-menu-observer="coding-style">
+          <a class="a" href="#coding-style">Coding style</a>
+        </li>
+        <li class="li" data-menu-observer="experience">
+          <a class="a" href="#experience">Experience</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -37,17 +49,48 @@ function hideMenu() {
 </script>
 
 <style scoped>
-.header {
-  padding: 0.5em;
+.nav {
+  background-color: #92400e;
+  color: var(--color-white);
+  width: 100%;
 }
-.ul {
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-}
-.li:hover > .a {
-  border-bottom: 1px solid black;
-  transition: border 0.1s ease-in;
+@media only screen and (min-width: 601px) {
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .nav {
+    height: 60px;
+  }
+  .ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    height: 100%;
+  }
+  .li:hover > .a {
+    border-bottom: 1px solid var(--color-white);
+    transition: border 0.1s ease-in;
+  }
+  .li.active {
+    position: relative;
+  }
+  .li::before {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-white);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+  }
+  .li.active::before {
+    opacity: 1;
+  }
 }
 
 .menu {
@@ -75,7 +118,6 @@ function hideMenu() {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     opacity: 0;
     transform: translateY(-150px);
   }
@@ -88,9 +130,14 @@ function hideMenu() {
   .nav.show > .ul {
     display: flex;
     flex-direction: column;
-    background-color: #92400e;
+    gap: 0;
+  }
+  .nav.show .li {
     padding: 1em;
-    color: var(--color-white);
+  }
+  .nav.show .li.active {
+    background-color: var(--color-bg);
+    color: var(--color-primary);
   }
 }
 </style>
