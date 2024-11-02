@@ -49,6 +49,9 @@ function hideMenu() {
 </script>
 
 <style scoped>
+.header {
+  z-index: var(--z-index-top-bar);
+}
 .nav {
   background-color: #92400e;
   color: var(--color-white);
@@ -108,7 +111,6 @@ function hideMenu() {
     right: 2em;
     background: none;
     border: none;
-    z-index: 1;
   }
   .menu-img {
     width: 40px;
@@ -136,7 +138,7 @@ function hideMenu() {
     padding: 1em;
   }
   .nav.show .li.active {
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-lighter);
     color: var(--color-primary);
   }
 }
