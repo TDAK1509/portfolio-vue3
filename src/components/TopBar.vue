@@ -8,7 +8,7 @@
       <img class="menu-img" src="@/assets/burger.svg" />
     </button>
 
-    <nav id="menu" class="nav">
+    <nav id="menu" class="nav" @click="hideMenu">
       <ul class="ul">
         <li class="li" data-menu-observer="about">
           <a class="a" href="#about">About</a>
