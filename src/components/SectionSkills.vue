@@ -107,7 +107,7 @@ function getImageSrc(name) {
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.9);
   padding: 0.8em 1em;
-  color: white;
+  color: var(--color-white);
 }
 .technology-icon {
   width: 24px;

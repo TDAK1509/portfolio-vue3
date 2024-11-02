@@ -103,7 +103,7 @@ function toggleSubBlockByRef(element) {
 }
 .block {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-white);
   height: 200px;
   border-radius: 10px;
   padding: 1.5em 2em 2em 2em;
