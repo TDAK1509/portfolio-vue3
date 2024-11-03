@@ -70,7 +70,7 @@ function hideMenu() {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 3em;
     height: 100%;
   }
 
