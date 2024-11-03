@@ -4,7 +4,7 @@
       <template #title>Technologies I worked with</template>
     </SectionTitle>
 
-    <div class="block animation-slide-in">
+    <div class="block animation-slide-up">
       <h3>Experienced</h3>
 
       <div class="block-content">
@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="block animation-slide-in">
+    <div class="block animation-slide-up">
       <h3>Mediocre</h3>
 
       <div class="block-content">
@@ -99,9 +99,9 @@ function getImageSrc(name) {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  width: fit-content;
 }
 .technology {
-  flex-basis: 200px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -118,5 +118,18 @@ function getImageSrc(name) {
 .technology-text {
   text-transform: capitalize;
   font-size: 0.9rem;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 609px) {
+  .technology {
+    flex-basis: 200px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .section {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+  }
 }
 </style>
