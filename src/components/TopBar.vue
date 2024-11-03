@@ -105,12 +105,18 @@ function hideMenu() {
     padding: 0;
   }
   .menu {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 1em;
     right: 2em;
-    background: none;
-    border: none;
+    background: var(--color-bg-lighter);
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    padding: 0.5em;
+    cursor: pointer;
+    z-index: var(--z-index-floating-button);
   }
   .menu-img {
     width: 40px;
