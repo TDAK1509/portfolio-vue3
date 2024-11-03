@@ -33,7 +33,7 @@ onMounted(() => {
       });
     },
     {
-      threshold: 0.3,
+      threshold: 0.6,
     }
   );
   sections.forEach(section => {
@@ -70,6 +70,12 @@ onBeforeUnmount(() => {
   margin: auto;
   width: 100%;
 }
+@media only screen and (min-width: 601px) {
+  .app {
+    scroll-padding-top: 60px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .main {
     padding-left: 0;

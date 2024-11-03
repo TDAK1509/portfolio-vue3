@@ -73,14 +73,17 @@ function hideMenu() {
     gap: 2em;
     height: 100%;
   }
-  .li:hover > .a {
-    border-bottom: 1px solid var(--color-white);
-    transition: border 0.1s ease-in;
-  }
+
   .li.active {
     position: relative;
   }
-  .li::before {
+  .a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .a::before {
     position: absolute;
     bottom: -3px;
     left: 0;
@@ -89,9 +92,12 @@ function hideMenu() {
     height: 2px;
     background-color: var(--color-white);
     opacity: 0;
-    transition: opacity 0.2s ease-in;
+    transition: opacity 0.15s ease-in;
   }
-  .li.active::before {
+  .li:hover .a::before {
+    opacity: 1;
+  }
+  .li.active > .a::before {
     opacity: 1;
   }
 }
