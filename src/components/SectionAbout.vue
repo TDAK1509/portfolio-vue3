@@ -11,7 +11,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="@/assets/email.svg" />
+        <SvgEmail />
       </a>
 
       <a
@@ -20,33 +20,38 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="@/assets/github2.svg" />
+        <SvgGithub />
       </a>
 
       <a
-        class="social-media"
+        class="social-media social-media--instagram"
         href="https://www.instagram.com/tdak1509/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="@/assets/instagram.svg" />
+        <SvgInstagram />
       </a>
     </div>
   </section>
 </template>
 
+<script setup>
+import SvgEmail from "@/components/svgs/SvgEmail.vue";
+import SvgGithub from "@/components/svgs/SvgGithub.vue";
+import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
+</script>
+
 <style scoped>
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 85vh;
+  text-align: center;
+  height: 90vh;
 }
 .avatar {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-top: 20%;
+  border: 2px solid var(--color-primary);
+  margin-top: 8em;
   margin-bottom: 2em;
 }
 .h1 {
@@ -63,8 +68,11 @@
   width: 35px;
 }
 .social-media--github {
-  width: 30px;
+  width: 32px;
   margin-left: 5px;
+}
+.social-media--instagram {
+  width: 33px;
 }
 
 .social-media:hover {
@@ -72,17 +80,23 @@
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (max-width: 600px) {
+  .h1 {
+    font-size: 2rem;
+  }
   .p {
     font-size: 0.9rem;
   }
   .avatar {
-    margin-top: 33%;
+    margin-top: 45%;
   }
   .social-media {
     width: 30px;
   }
   .social-media--github {
-    width: 25px;
+    width: 27px;
+  }
+  .social-media--instagram {
+    width: 28px;
   }
 }
 </style>
