@@ -117,6 +117,7 @@ function hideMenu() {
     padding: 0.5em;
     cursor: pointer;
     z-index: var(--z-index-floating-button);
+    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.3);
   }
   .menu-img {
     width: 40px;
