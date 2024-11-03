@@ -23,7 +23,7 @@
             src="@/assets/technologies/micro-frontends.png"
             alt="micro-frontends"
           />
-          <div>Micro Frontends</div>
+          <div class="technology-text">Micro Frontends</div>
         </div>
       </div>
     </div>
@@ -96,24 +96,27 @@ function getImageSrc(name) {
 }
 .block-content {
   margin-top: 1em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 .technology {
+  flex-basis: 200px;
+  height: 50px;
   display: flex;
   align-items: center;
   gap: 12px;
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.9);
-  padding: 0.8em 1em;
+  padding: 0 1em;
   color: var(--color-white);
 }
 .technology-icon {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
 }
 .technology-text {
   text-transform: capitalize;
+  font-size: 0.9rem;
 }
 </style>
