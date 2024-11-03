@@ -59,6 +59,7 @@ useIntersectionObserver(animationClassName);
   border-radius: 12px;
   border: 2px solid black;
   margin-bottom: 1em;
+  background-color: var(--color-bg-panel);
 }
 .card-image {
   width: 30px;
