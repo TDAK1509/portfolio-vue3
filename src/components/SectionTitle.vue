@@ -7,6 +7,11 @@
 
 <style scoped>
 .header {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
+}
+.title {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 </style>

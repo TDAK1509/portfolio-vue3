@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <SectionTitle>
-      <template #title>Technologies I worked with</template>
+      <template #title>Skills</template>
     </SectionTitle>
 
     <div class="block animation-slide-up">

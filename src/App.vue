@@ -83,6 +83,6 @@ onBeforeUnmount(() => {
   }
 }
 .app-section {
-  margin-top: 2.5em;
+  margin-top: 4em;
 }
 </style>
