@@ -73,12 +73,11 @@ const mediocreTechnologies = [
   "linux",
   "bash",
   "digital-ocean",
-  "firebase",
   "mysql",
   "nginx",
   "terraform",
-  "firebase",
   "react",
+  "firebase",
 ];
 
 function getImageSrc(name) {
@@ -92,6 +91,8 @@ function getImageSrc(name) {
   padding: 0 1em;
 }
 .block {
+  max-width: 840px;
+  margin: auto;
   margin-top: 1em;
 }
 .block-content {
@@ -107,9 +108,10 @@ function getImageSrc(name) {
   align-items: center;
   gap: 12px;
   border-radius: 8px;
-  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid var(--color-secondary);
+  background-color: var(--color-white);
   padding: 0 1em;
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 .technology-icon {
   width: 22px;
