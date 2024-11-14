@@ -79,7 +79,7 @@ import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
   height: 200px;
   position: relative;
   border-radius: 50%;
-  border: 1px solid var(--color-black);
+  border: 1px solid var(--color-grey);
 }
 .text-container {
   flex: 1;
