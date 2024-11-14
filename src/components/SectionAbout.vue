@@ -108,6 +108,11 @@ import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
   margin-top: 2.25em;
   font-size: 0.9rem;
   font-weight: 700;
+  transition: transform 0.15s linear;
+}
+.email:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s linear;
 }
 .email-icon {
   width: 25px;
@@ -127,6 +132,10 @@ import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.social-link:hover {
+  border-color: var(--color-grey);
+  transition: border 0.2s linear;
 }
 .social-icon {
   width: 60%;
