@@ -63,6 +63,7 @@ import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
   display: flex;
   text-align: center;
   padding: 2em;
+  box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.3);
 }
 .image-container {
   flex-basis: 40%;
