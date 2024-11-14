@@ -12,6 +12,7 @@
   --color-orange: #ff6d6d;
   --color-black: #060606;
   --color-grey: #7d7c7a;
+  --color-grey-light: #cbcbc8;
   --color-white: #fffbf8;
 
   color: var(--color-grey);
