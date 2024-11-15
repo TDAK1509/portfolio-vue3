@@ -1,9 +1,12 @@
-import { createMemoryHistory, createRouter } from "vue-router";
+import { createWebHistory, createRouter } from "vue-router";
 
-const routes = [{ path: "/", component: () => import("./views/HomePage.vue") }];
+const routes = [
+  { path: "/", component: () => import("./views/HomePage.vue") },
+  { path: "/skills", component: () => import("./views/SkillsPage.vue") },
+];
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 });
 
