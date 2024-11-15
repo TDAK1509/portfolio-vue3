@@ -14,7 +14,7 @@
 
       <a href="mailto:dbcgdhh@gmail.com" class="email">
         <span>Send me an email</span>
-        <SvgGithub class="email-icon" />
+        <SvgEmail class="email-icon" />
       </a>
 
       <div class="social-media">
@@ -56,14 +56,10 @@ import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
 
 <style scoped>
 .about {
-  background-color: var(--color-white);
-  width: 90%;
-  max-width: 1000px;
-  height: 500px;
   display: flex;
   text-align: center;
-  padding: 2em;
-  box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
 }
 .image-container {
   flex-basis: 40%;
@@ -104,6 +100,7 @@ import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
   padding: 0.4em 3em;
   border-radius: 30px;
   display: flex;
+  align-items: center;
   gap: 10px;
   text-transform: uppercase;
   margin-top: 2.25em;
@@ -116,8 +113,8 @@ import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
   transition: transform 0.2s linear;
 }
 .email-icon {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 .social-media {
   display: flex;
