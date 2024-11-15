@@ -44,7 +44,6 @@
         </a>
       </div>
     </div>
-    <NextPageButton to="/skills" />
   </section>
 </template>
 
@@ -53,7 +52,6 @@ import SvgEmail from "@/components/svgs/SvgEmail.vue";
 import SvgGithub from "@/components/svgs/SvgGithub.vue";
 import SvgFacebook from "@/components/svgs/SvgFacebook.vue";
 import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
-import NextPageButton from "@/components/NextPageButton.vue";
 </script>
 
 <style scoped>

@@ -1,14 +1,6 @@
 <template>
-  <section class="skills-page">
-    Skills page
-
-    <PreviousPageButton to="/" />
-  </section>
+  <section class="skills-page">Skills page</section>
 </template>
-
-<script setup>
-import PreviousPageButton from "@/components/PreviousPageButton.vue";
-</script>
 
 <style scoped>
 .skills-page {

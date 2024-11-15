@@ -10,9 +10,6 @@ import SvgArrowRight from "@/components/svgs/SvgArrowRight.vue";
 
 <style scoped>
 .next-page-button {
-  position: absolute;
-  bottom: -1em;
-  right: -0.5em;
   transition: all 0.2s ease;
 }
 .next-page-button:hover {
