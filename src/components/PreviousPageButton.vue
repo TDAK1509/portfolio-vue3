@@ -13,6 +13,11 @@ import SvgArrowRight from "@/components/svgs/SvgArrowRight.vue";
   position: absolute;
   bottom: -1em;
   left: -0.5em;
+  transition: all 0.2s ease;
+}
+.previous-page-button:hover {
+  transform: scale(1.2);
+  color: var(--color-black);
 }
 .previous-page-button-icon {
   width: 40px;

@@ -13,9 +13,15 @@ import SvgArrowRight from "@/components/svgs/SvgArrowRight.vue";
   position: absolute;
   bottom: -1em;
   right: -0.5em;
+  transition: all 0.2s ease;
+}
+.next-page-button:hover {
+  transform: scale(1.2);
+  color: var(--color-black);
 }
 .next-page-button-icon {
   width: 40px;
   height: 40px;
+  display: inline-block;
 }
 </style>
