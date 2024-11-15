@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section class="home-page">
     <div class="image-container">
       <img class="avatar" src="@/assets/avatar.jpeg" alt="avatar" />
     </div>
@@ -57,7 +57,7 @@ import NextPageButton from "@/components/NextPageButton.vue";
 </script>
 
 <style scoped>
-.about {
+.home-page {
   display: flex;
   text-align: center;
   width: 100%;
