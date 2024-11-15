@@ -1,14 +1,10 @@
 <template>
   <div class="app">
     <main class="main">
-      <SectionAbout />
+      <RouterView />
     </main>
   </div>
 </template>
-
-<script setup>
-import SectionAbout from "@/components/SectionAbout.vue";
-</script>
 
 <style scoped>
 .app {
