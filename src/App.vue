@@ -1,5 +1,7 @@
 <template>
   <div class="app">
+    <MenuBar class="app__menu-bar" />
+
     <main class="main">
       <RouterView v-slot="{ Component, route }">
         <transition name="fade">
@@ -22,6 +24,7 @@
 </template>
 
 <script setup>
+import MenuBar from "@/components/MenuBar.vue";
 import NextPageButton from "@/components/NextPageButton.vue";
 import PreviousPageButton from "@/components/PreviousPageButton.vue";
 import { computed } from "vue";
@@ -46,6 +49,13 @@ const previousPage = computed(() => {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.app__menu-bar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .main {
   background-color: var(--color-white);
