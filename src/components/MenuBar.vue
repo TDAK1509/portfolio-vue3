@@ -36,5 +36,6 @@
 }
 .menu-bar__link.router-link-active {
   font-weight: 700;
+  text-decoration: underline;
 }
 </style>
