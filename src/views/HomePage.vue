@@ -1,53 +1,57 @@
 <template>
-  <section class="home-page">
-    <div class="image-container">
-      <img class="avatar" src="@/assets/avatar.jpeg" alt="avatar" />
-    </div>
-    <div class="text-container">
-      <h3 class="text-container__greeting">Hi, I'm Khuong Tran</h3>
-      <h4 class="text-container__role">Lead engineer and web developer</h4>
-      <p>
-        I am obssessed with clean codes, CIs, and automated tasks for projects.
-        I love building a system where any developers can easily contribute to
-        the projects knowing that they are well protected from bugs.
-      </p>
-
-      <a href="mailto:dbcgdhh@gmail.com" class="email">
-        <span>Send me an email</span>
-        <SvgEmail class="email-icon" />
-      </a>
-
-      <div class="social-media">
-        <a
-          class="social-link"
-          href="https://github.com/TDAK1509"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <SvgGithub class="social-icon" />
-        </a>
-        <a
-          class="social-link"
-          href="https://www.facebook.com/TDAK1509"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <SvgFacebook class="social-icon" />
-        </a>
-        <a
-          class="social-link"
-          href="https://www.instagram.com/tdak1509/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <SvgInstagram class="social-icon" />
-        </a>
+  <AppPanel class="home-page">
+    <section class="home-page-section">
+      <div class="image-container">
+        <img class="avatar" src="@/assets/avatar.jpeg" alt="avatar" />
       </div>
-    </div>
-  </section>
+      <div class="text-container">
+        <h3 class="text-container__greeting">Hi, I'm Khuong Tran</h3>
+        <h4 class="text-container__role">Lead engineer and web developer</h4>
+        <p>
+          I am obssessed with clean codes, CIs, and automated tasks for
+          projects. I love building a system where any developers can easily
+          contribute to the projects knowing that they are well protected from
+          bugs.
+        </p>
+
+        <a href="mailto:dbcgdhh@gmail.com" class="email">
+          <span>Send me an email</span>
+          <SvgEmail class="email-icon" />
+        </a>
+
+        <div class="social-media">
+          <a
+            class="social-link"
+            href="https://github.com/TDAK1509"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <SvgGithub class="social-icon" />
+          </a>
+          <a
+            class="social-link"
+            href="https://www.facebook.com/TDAK1509"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <SvgFacebook class="social-icon" />
+          </a>
+          <a
+            class="social-link"
+            href="https://www.instagram.com/tdak1509/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <SvgInstagram class="social-icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </AppPanel>
 </template>
 
 <script setup>
+import AppPanel from "@/components/AppPanel.vue";
 import SvgEmail from "@/components/svgs/SvgEmail.vue";
 import SvgGithub from "@/components/svgs/SvgGithub.vue";
 import SvgFacebook from "@/components/svgs/SvgFacebook.vue";
@@ -56,6 +60,9 @@ import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
 
 <style scoped>
 .home-page {
+  height: 500px;
+}
+.home-page-section {
   display: flex;
   text-align: center;
   width: 100%;
