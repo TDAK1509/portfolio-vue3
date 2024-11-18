@@ -22,6 +22,7 @@
 <style scoped>
 .menu-bar {
   padding: 0.5em;
+  color: var(--color-black);
 }
 .menu-bar__list {
   display: flex;
