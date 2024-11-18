@@ -28,5 +28,6 @@ import MenuBar from "@/components/MenuBar.vue";
 }
 .main {
   text-align: center;
+  width: 100%;
 }
 </style>
