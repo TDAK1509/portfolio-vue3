@@ -13,7 +13,8 @@ import TinhLai from "@/components/portfolio/TinhLai.vue";
 
 <style scoped>
 .portfolio-container {
-  height: max(85vh, 700px);
+  margin-bottom: 2em;
+  height: auto;
 }
 .portfolio-page {
   position: relative;

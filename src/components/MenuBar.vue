@@ -30,6 +30,7 @@
 }
 .menu-bar__link {
   letter-spacing: 1px;
+  color: var(--color-primary);
 }
 .menu-bar__link:hover {
   text-decoration: underline;
