@@ -37,39 +37,21 @@
     </ul>
 
     <div class="portfolio__images">
-      <IphonePlaceholder :imgSrc="formMobileImage" />
-      <DesktopPlaceholder :imgSrc="formDesktopImage" />
-      <!-- <figure class="portfolio_figure">
-        <img
-          class="portfolio_img"
-          src="@/assets/portfolio/tinh-lai-mobile.png"
-          alt="mobile form"
+      <div class="portfolio_item">
+        <IphonePlaceholder :imgSrc="formMobileImage" />
+      </div>
+      <div class="portfolio_item">
+        <DesktopPlaceholder :imgSrc="formDesktopImage" />
+      </div>
+      <div class="portfolio_item">
+        <IphonePlaceholder :imgSrc="resultMobileImage" />
+      </div>
+      <div class="portfolio_item">
+        <DesktopPlaceholder
+          :imgSrc="resultDesktopImage"
+          :imgStyle="{ objectPosition: '0 -30px' }"
         />
-      </figure>
-
-      <figure class="portfolio_figure">
-        <img
-          class="portfolio_img"
-          src="@/assets/portfolio/tinh-lai-desktop.png"
-          alt="desktop form"
-        />
-      </figure>
-
-      <figure class="portfolio_figure">
-        <img
-          class="portfolio_img"
-          src="@/assets/portfolio/tinh-lai-result-mobile.png"
-          alt="mobile result"
-        />
-      </figure>
-
-      <figure class="portfolio_figure">
-        <img
-          class="portfolio_img"
-          src="@/assets/portfolio/tinh-lai-desktop.png"
-          alt="desktop result"
-        />
-      </figure> -->
+      </div>
     </div>
   </div>
 </template>
@@ -79,6 +61,8 @@ import IphonePlaceholder from "./IphonePlaceholder.vue";
 import DesktopPlaceholder from "./DesktopPlaceholder.vue";
 import formMobileImage from "@/assets/portfolio/tinh-lai-mobile.png";
 import formDesktopImage from "@/assets/portfolio/tinh-lai-desktop.png";
+import resultMobileImage from "@/assets/portfolio/tinh-lai-result-mobile.png";
+import resultDesktopImage from "@/assets/portfolio/tinh-lai-result-desktop.png";
 </script>
 
 <style scoped>
@@ -108,9 +92,7 @@ import formDesktopImage from "@/assets/portfolio/tinh-lai-desktop.png";
   height: 100%;
   border: 1px solid var(--color-black);
 }
-.portfolio_img {
-  display: inline-block;
-  height: 90%;
-  object-fit: contain;
+.portfolio_item {
+  flex: 1;
 }
 </style>

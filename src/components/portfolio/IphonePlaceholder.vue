@@ -13,7 +13,7 @@ defineProps({
 
 <style scoped>
 .iphone-placeholder {
-  --height: 400px;
+  --height: 380px;
   --width: calc(var(--height) * 0.5);
   width: var(--width);
   height: var(--height);
@@ -23,6 +23,7 @@ defineProps({
   background-position: -10px -8px;
   position: relative;
   overflow-y: hidden;
+  display: block;
 }
 .iphone-placeholder__img {
   --img-width: calc(var(--width) - 23px);

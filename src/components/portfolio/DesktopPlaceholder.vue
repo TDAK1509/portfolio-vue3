@@ -13,7 +13,7 @@ defineProps({
 
 <style scoped>
 .desktop-placeholder {
-  --height: 400px;
+  --height: 380px;
   --width: calc(var(--height) * 1.5);
   width: var(--width);
   height: var(--height);
@@ -23,6 +23,7 @@ defineProps({
   background-position: -75px 0px;
   text-align: left;
   padding: 27px 19px;
+  display: block;
 }
 .desktop-placeholder__img {
   --img-width: calc(var(--width) - 68px);
