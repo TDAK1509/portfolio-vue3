@@ -21,19 +21,17 @@ defineProps({
   background-repeat: no-repeat;
   background-size: calc(var(--width) + 20px) calc(var(--height) + 32px);
   background-position: -10px -8px;
-  position: relative;
   overflow-y: hidden;
   display: block;
+  padding: 34px 13px;
 }
 .iphone-placeholder__img {
   --img-width: calc(var(--width) - 23px);
   --img-height: calc(var(--height) - 70px);
   width: var(--img-width);
   height: var(--img-height);
-  position: absolute;
-  top: 34px;
-  left: 13px;
   object-fit: cover;
   object-position: 0 -25px;
+  border: 1px solid #fff;
 }
 </style>
