@@ -37,7 +37,8 @@
     </ul>
 
     <div class="portfolio__images">
-      <figure class="portfolio_figure">
+      <IphonePlaceholder :imgSrc="formMobileImage" />
+      <!-- <figure class="portfolio_figure">
         <img
           class="portfolio_img"
           src="@/assets/portfolio/tinh-lai-mobile.png"
@@ -67,10 +68,15 @@
           src="@/assets/portfolio/tinh-lai-desktop.png"
           alt="desktop result"
         />
-      </figure>
+      </figure> -->
     </div>
   </div>
 </template>
+
+<script setup>
+import IphonePlaceholder from "./IphonePlaceholder.vue";
+import formMobileImage from "@/assets/portfolio/tinh-lai-mobile.png";
+</script>
 
 <style scoped>
 .portfolio-item {
@@ -99,10 +105,9 @@
   height: 100%;
   border: 1px solid var(--color-black);
 }
-
 .portfolio_img {
   display: inline-block;
-  height: 100%;
+  height: 90%;
   object-fit: contain;
 }
 </style>
