@@ -21,7 +21,6 @@ defineProps({
   background-repeat: no-repeat;
   background-size: calc(var(--width) + 20px) calc(var(--height) + 32px);
   background-position: -10px -8px;
-  margin-right: 3em;
   position: relative;
   overflow-y: hidden;
 }

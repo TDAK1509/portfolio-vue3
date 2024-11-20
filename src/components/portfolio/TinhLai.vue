@@ -38,6 +38,7 @@
 
     <div class="portfolio__images">
       <IphonePlaceholder :imgSrc="formMobileImage" />
+      <DesktopPlaceholder :imgSrc="formDesktopImage" />
       <!-- <figure class="portfolio_figure">
         <img
           class="portfolio_img"
@@ -75,7 +76,9 @@
 
 <script setup>
 import IphonePlaceholder from "./IphonePlaceholder.vue";
+import DesktopPlaceholder from "./DesktopPlaceholder.vue";
 import formMobileImage from "@/assets/portfolio/tinh-lai-mobile.png";
+import formDesktopImage from "@/assets/portfolio/tinh-lai-desktop.png";
 </script>
 
 <style scoped>
