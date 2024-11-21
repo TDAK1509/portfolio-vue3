@@ -29,5 +29,19 @@ import MenuBar from "@/components/MenuBar.vue";
 .main {
   text-align: center;
   width: 100%;
+  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    padding-bottom: 5em;
+    padding-top: 5em;
+    font-size: 11pt;
+  }
+  .app__menu-bar {
+    left: auto;
+    right: 0;
+    transform: translateX(0);
+  }
 }
 </style>
