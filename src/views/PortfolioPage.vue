@@ -31,7 +31,7 @@ const page = ref(0);
 <style scoped>
 .portfolio-container {
   margin-bottom: 2em;
-  height: 650px;
+  height: 640px;
   position: relative;
 }
 .portfolio-page {
