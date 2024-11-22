@@ -138,6 +138,7 @@ import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
   display: flex;
   justify-content: center;
   align-items: center;
+  color: inherit;
 }
 .social-link:hover {
   border-color: var(--color-grey);
@@ -146,5 +147,23 @@ import SvgInstagram from "@/components/svgs/SvgInstagram.vue";
 .social-icon {
   width: 60%;
   height: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-page {
+    height: 80vh;
+    overflow-y: auto;
+  }
+  .home-page-section {
+    flex-direction: column;
+  }
+  .email {
+    padding: 0.4em 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .social-media {
+    gap: 1em;
+  }
 }
 </style>
