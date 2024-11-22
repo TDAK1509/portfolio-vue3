@@ -13,7 +13,7 @@
 
     <section class="portfolio-page">
       <TinhLai v-show="page === 0" />
-      <div v-show="page === 1">another page</div>
+      <VSCodeWithFunctionsGenerator v-show="page === MAX_PAGE" />
     </section>
   </AppPanel>
 </template>
@@ -21,10 +21,12 @@
 <script setup>
 import AppPanel from "@/components/AppPanel.vue";
 import TinhLai from "@/components/portfolio/TinhLai.vue";
+import VSCodeWithFunctionsGenerator from "@/components/portfolio/VSCodeWithFunctionsGenerator.vue";
 import PreviousPageButton from "@/components/PreviousPageButton.vue";
 import NextPageButton from "@/components/NextPageButton.vue";
 import { ref } from "vue";
 
+const MAX_PAGE = 1;
 const page = ref(0);
 </script>
 
