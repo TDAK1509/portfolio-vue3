@@ -10,7 +10,12 @@
         :key="label"
         class="menu-bar__list-item"
       >
-        <RouterLink class="menu-bar__link" :to="to" v-text="label" />
+        <RouterLink
+          class="menu-bar__link"
+          :to="to"
+          v-text="label"
+          @click="closeMenu"
+        />
       </li>
     </ul>
   </nav>
@@ -19,7 +24,7 @@
 <script setup>
 import SvgBurger from "@/components/svgs/SvgBurger.vue";
 import SvgClose from "@/components/svgs/SvgClose.vue";
-import { ref } from "vue";
+import { ref, watch } from "vue";
 
 const menuLinks = [
   {
@@ -47,6 +52,12 @@ function toggleMenu() {
   if (!menu.value) return;
   menu.value.classList.toggle("active");
   shouldShowMenu.value = !shouldShowMenu.value;
+}
+
+function closeMenu() {
+  if (!menu.value) return;
+  menu.value.classList.remove("active");
+  shouldShowMenu.value = false;
 }
 </script>
 
