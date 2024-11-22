@@ -33,6 +33,12 @@ body {
   height: 100%;
 }
 
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 ul,
 li {
   list-style-type: none;
