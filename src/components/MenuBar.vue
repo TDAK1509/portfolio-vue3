@@ -97,6 +97,7 @@ function closeMenu() {
     right: 1em;
     background: none;
     border: none;
+    color: inherit;
   }
   .menu-bar__list {
     visibility: hidden;
