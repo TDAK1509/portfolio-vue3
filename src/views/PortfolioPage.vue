@@ -1,16 +1,5 @@
 <template>
   <AppPanel class="portfolio-container">
-    <PreviousPageButton
-      class="portfolio-page__page-button portfolio-page__page-button--previous"
-      v-show="page > 0"
-      @click="page--"
-    />
-    <NextPageButton
-      class="portfolio-page__page-button portfolio-page__page-button--next"
-      v-show="page < maxPages"
-      @click="page++"
-    />
-
     <section class="portfolio-page">
       <component
         v-for="(c, index) in projectComponents"
@@ -19,6 +8,17 @@
         :is="c"
       />
     </section>
+
+    <div class="portfolio-page__footer">
+      <PreviousPageButton
+        :class="{ 'page-button--hide': page === 0 }"
+        @click="page--"
+      />
+      <NextPageButton
+        :class="{ 'page-button--hide': page === maxPages }"
+        @click="page++"
+      />
+    </div>
   </AppPanel>
 </template>
 
@@ -41,42 +41,27 @@ const page = ref(0);
 <style scoped>
 .portfolio-container {
   margin-bottom: 2em;
-  height: auto;
+  height: 650px;
   position: relative;
   font-size: 0.9rem;
-  padding-bottom: 2.8em;
 }
 .portfolio-page {
   position: relative;
-  height: 100%;
+  height: calc(100% - 40px);
+  overflow-y: auto;
 }
-.portfolio-page__page-button {
-  position: absolute;
-  bottom: 0;
-  color: var(--color-black);
+.portfolio-page__footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.portfolio-page__page-button--previous {
-  left: 1em;
-}
-.portfolio-page__page-button--next {
-  right: 1em;
-}
-@media only screen and (min-width: 601px) {
-  .portfolio-page__page-button:not(:disabled):hover {
-    transform: scale(1.2);
-  }
+.page-button--hide {
+  visibility: hidden;
 }
 
 @media only screen and (max-width: 600px) {
   .portfolio-container {
     font-size: 0.8rem;
-  }
-
-  .portfolio-page__page-button--previous {
-    left: 0.5em;
-  }
-  .portfolio-page__page-button--next {
-    right: 0.5em;
   }
 }
 </style>
