@@ -1,7 +1,7 @@
 <template>
   <PortfolioTemplate :images="images" project-name="Usergram">
     <template #description>
-      <ul class="usergram__description disc">
+      <ul class="disc">
         <li>
           <strong>Website:</strong>
           <a

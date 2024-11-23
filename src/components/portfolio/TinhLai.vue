@@ -1,7 +1,7 @@
 <template>
   <PortfolioTemplate :images="images" project-name="tinhlai.com">
     <template #description>
-      <ul class="tinh-lai__description disc">
+      <ul class="disc">
         <li>
           <strong>Website:</strong>
           <a
@@ -69,12 +69,6 @@ const images = [
 </script>
 
 <style scoped>
-.tinh-lai__description {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3em;
-}
 .tinh-lai__text {
   margin-left: 0.3em;
 }

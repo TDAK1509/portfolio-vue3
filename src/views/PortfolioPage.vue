@@ -14,6 +14,7 @@
     <section class="portfolio-page">
       <TinhLai v-show="page === 0" />
       <BebitUsergram v-show="page === 1" />
+      <PviCard v-show="page === 2" />
     </section>
   </AppPanel>
 </template>
@@ -22,11 +23,12 @@
 import AppPanel from "@/components/AppPanel.vue";
 import TinhLai from "@/components/portfolio/TinhLai.vue";
 import BebitUsergram from "@/components/portfolio/BebitUsergram.vue";
+import PviCard from "@/components/portfolio/PviCard.vue";
 import PreviousPageButton from "@/components/PreviousPageButton.vue";
 import NextPageButton from "@/components/NextPageButton.vue";
 import { ref } from "vue";
 
-const MAX_PAGE = 1;
+const MAX_PAGE = 2;
 const page = ref(0);
 </script>
 
