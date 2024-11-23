@@ -14,4 +14,10 @@
   box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.3);
   position: relative;
 }
+
+@media only screen and (max-width: 600px) {
+  .app-panel {
+    padding: 1em;
+  }
+}
 </style>

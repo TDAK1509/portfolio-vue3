@@ -33,8 +33,10 @@ const page = ref(0);
 <style scoped>
 .portfolio-container {
   margin-bottom: 2em;
-  height: 640px;
+  height: auto;
   position: relative;
+  font-size: 0.9rem;
+  padding-bottom: 2.8em;
 }
 .portfolio-page {
   position: relative;
@@ -49,5 +51,18 @@ const page = ref(0);
 }
 .portfolio-page__page-button--next {
   right: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-container {
+    font-size: 0.8rem;
+  }
+
+  .portfolio-page__page-button--previous {
+    left: 0.5em;
+  }
+  .portfolio-page__page-button--next {
+    right: 0.5em;
+  }
 }
 </style>

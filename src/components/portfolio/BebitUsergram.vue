@@ -1,5 +1,5 @@
 <template>
-  <PortfolioTemplate :images="images">
+  <PortfolioTemplate :images="images" project-name="Usergram">
     <template #description>
       <ul class="usergram__description disc">
         <li>

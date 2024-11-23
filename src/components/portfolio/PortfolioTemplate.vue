@@ -1,5 +1,9 @@
 <template>
   <div class="portfolio-item">
+    <h4 class="portfolio-item__title">
+      Project name:
+      <span class="portfolio-item__project-name">{{ projectName }}</span>
+    </h4>
     <slot name="description"></slot>
 
     <div class="portfolio__images">
@@ -24,13 +28,20 @@ import IphonePlaceholder from "./IphonePlaceholder.vue";
 import DesktopPlaceholder from "./DesktopPlaceholder.vue";
 
 defineProps({
+  projectName: String,
   images: Array,
 });
 </script>
 
 <style scoped>
+.portfolio-item__project-name {
+  text-align: left;
+  letter-spacing: 1px;
+  color: var(--color-orange);
+}
 .portfolio-item {
   height: auto;
+  text-align: left;
 }
 .portfolio__images {
   display: flex;
@@ -48,5 +59,12 @@ defineProps({
 }
 .portfolio_item {
   flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-item__title {
+    font-size: 1rem;
+    margin-bottom: 0.1em;
+  }
 }
 </style>

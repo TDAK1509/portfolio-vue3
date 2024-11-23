@@ -1,5 +1,5 @@
 <template>
-  <PortfolioTemplate :images="images">
+  <PortfolioTemplate :images="images" project-name="tinhlai.com">
     <template #description>
       <ul class="tinh-lai__description disc">
         <li>
