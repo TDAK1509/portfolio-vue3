@@ -47,6 +47,7 @@ import usergramImage1 from "@/assets/portfolio/usergram-1.png";
 import usergramImage2 from "@/assets/portfolio/usergram-2.png";
 import usergramImage3 from "@/assets/portfolio/usergram-3.png";
 import usergramImage4 from "@/assets/portfolio/usergram-4.png";
+import usergramImage5 from "@/assets/portfolio/usergram-5.png";
 
 const images = [
   {
@@ -63,6 +64,10 @@ const images = [
   },
   {
     src: usergramImage4,
+    isDesktop: true,
+  },
+  {
+    src: usergramImage5,
     isDesktop: true,
   },
 ];
