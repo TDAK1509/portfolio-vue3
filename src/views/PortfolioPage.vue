@@ -2,18 +2,18 @@
   <AppPanel class="portfolio-container">
     <PreviousPageButton
       class="portfolio-page__page-button portfolio-page__page-button--previous"
-      :disabled="page === 0"
+      v-show="page > 0"
       @click="page--"
     />
     <NextPageButton
       class="portfolio-page__page-button portfolio-page__page-button--next"
-      :disabled="page === 1"
+      v-show="page < MAX_PAGE"
       @click="page++"
     />
 
     <section class="portfolio-page">
       <TinhLai v-show="page === 0" />
-      <BebitUsergram v-show="page === MAX_PAGE" />
+      <BebitUsergram v-show="page === 1" />
     </section>
   </AppPanel>
 </template>
@@ -45,12 +45,18 @@ const page = ref(0);
 .portfolio-page__page-button {
   position: absolute;
   bottom: 0;
+  color: var(--color-black);
 }
 .portfolio-page__page-button--previous {
   left: 1em;
 }
 .portfolio-page__page-button--next {
   right: 1em;
+}
+@media only screen and (min-width: 601px) {
+  .portfolio-page__page-button:not(:disabled):hover {
+    transform: scale(1.2);
+  }
 }
 
 @media only screen and (max-width: 600px) {

@@ -14,10 +14,6 @@ import SvgArrowRight from "@/components/svgs/SvgArrowRight.vue";
   background: none;
   border: none;
 }
-.next-page-button:hover {
-  transform: scale(1.2);
-  color: var(--color-black);
-}
 .next-page-button-icon {
   width: 40px;
   height: 40px;
