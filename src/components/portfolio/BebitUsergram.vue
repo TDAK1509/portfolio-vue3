@@ -5,11 +5,11 @@
         <li>
           <strong>Website:</strong>
           <a
-            href="https://app.usergram.info/"
+            href="https://app.usergram.info"
             rel="noopener noreferrer"
             target="_blank"
           >
-            https://app.usergram.info/
+            https://app.usergram.info
           </a>
         </li>
         <li>
