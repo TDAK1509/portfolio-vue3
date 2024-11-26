@@ -12,11 +12,11 @@
     <div class="portfolio-page__footer">
       <PreviousPageButton
         :class="{ 'page-button--hide': page === 0 }"
-        @click="page--"
+        @click="toPreviousPage"
       />
       <NextPageButton
         :class="{ 'page-button--hide': page === maxPages }"
-        @click="page++"
+        @click="toNextPage"
       />
     </div>
   </AppPanel>
@@ -36,6 +36,14 @@ const projectComponents = [TinhLai, BebitUsergram, PviCard, WordleFinder];
 const maxPages = projectComponents.length - 1;
 
 const page = ref(0);
+
+function toPreviousPage() {
+  if (page.value > 0) page.value--;
+}
+
+function toNextPage() {
+  if (page.value < maxPages) page.value++;
+}
 </script>
 
 <style scoped>
