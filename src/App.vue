@@ -3,7 +3,11 @@
     <MenuBar class="app__menu-bar" />
 
     <main class="main">
-      <RouterView />
+      <RouterView v-slot="{ Component }">
+        <Transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </Transition>
+      </RouterView>
     </main>
   </div>
 </template>
@@ -43,5 +47,15 @@ import MenuBar from "@/components/MenuBar.vue";
     right: 0;
     transform: translateX(0);
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.15s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
