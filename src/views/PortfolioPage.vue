@@ -1,12 +1,9 @@
 <template>
   <AppPanel class="portfolio-container">
     <section class="portfolio-page">
-      <component
-        v-for="(c, index) in projectComponents"
-        v-show="page === index"
-        :key="index"
-        :is="c"
-      />
+      <Transition :name="transitionName" mode="out-in">
+        <component :is="projectComponents[page]" :key="transitionKey" />
+      </Transition>
     </section>
 
     <div class="portfolio-page__footer">
@@ -36,12 +33,18 @@ const projectComponents = [TinhLai, BebitUsergram, PviCard, WordleFinder];
 const maxPages = projectComponents.length - 1;
 
 const page = ref(0);
+const transitionName = ref("");
+const transitionKey = ref(0);
 
 function toPreviousPage() {
+  transitionName.value = "slide-right";
+  transitionKey.value++;
   if (page.value > 0) page.value--;
 }
 
 function toNextPage() {
+  transitionName.value = "slide-left";
+  transitionKey.value++;
   if (page.value < maxPages) page.value++;
 }
 </script>
@@ -71,5 +74,32 @@ function toNextPage() {
   .portfolio-container {
     font-size: 0.8rem;
   }
+}
+/* Slide to the left */
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.slide-left-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.slide-left-leave-to {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* Slide to the right */
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.slide-right-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.slide-right-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
 }
 </style>
