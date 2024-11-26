@@ -28,13 +28,41 @@
             A tool to improve UX by analyzing users' behaviors.
           </span>
         </li>
-
         <li>
           <strong>Technologies I worked with:</strong>
           <span class="usergram__text"
             >Vue, Django, Cypress, Jest, Docker, AWS, Terraform, Sentry, Github
             Actions, Micro Frontends, Micro Services.</span
           >
+        </li>
+        <li>
+          <strong>Others:</strong>
+          <span>
+            created some extensions/plugins to help daily work, and to help
+            other teammates follow code guidelines.
+          </span>
+          <ul class="sub">
+            <li class="usergram__text">
+              <span>Github action marketplace:</span>
+              <a
+                href="https://github.com/marketplace/actions/set-pr-labels-based-on-pr-title"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Set PR labels based on PR title
+              </a>
+            </li>
+            <li class="usergram__text">
+              <span>VSCode extension:</span>
+              <a
+                href="https://marketplace.visualstudio.com/items?itemName=TDAK1509.with-functions-generator"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                with-functions-generator
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </template>
@@ -76,5 +104,11 @@ const images = [
 <style scoped>
 .usergram__text {
   margin-left: 0.3em;
+}
+.sub {
+  margin-left: 1em;
+}
+.sub > li {
+  list-style-type: circle;
 }
 </style>
