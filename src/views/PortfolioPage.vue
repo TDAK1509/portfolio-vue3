@@ -29,7 +29,7 @@ import PreviousPageButton from "@/components/PreviousPageButton.vue";
 import NextPageButton from "@/components/NextPageButton.vue";
 import { ref } from "vue";
 
-const projectComponents = [TinhLai, BebitUsergram, PviCard, WordleFinder];
+const projectComponents = [BebitUsergram, TinhLai, PviCard, WordleFinder];
 const maxPages = projectComponents.length - 1;
 
 const page = ref(0);
