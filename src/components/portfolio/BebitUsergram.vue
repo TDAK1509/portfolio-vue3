@@ -3,6 +3,17 @@
     <template #description>
       <ul class="disc">
         <li>
+          <strong>Project type:</strong>
+          <span class="usergram__text">work for company</span>
+          <a
+            href="https://www.bebit.co.jp/english/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            beBit Inc.
+          </a>
+        </li>
+        <li>
           <strong>Website:</strong>
           <a
             href="https://app.usergram.info"
@@ -10,16 +21,6 @@
             target="_blank"
           >
             https://app.usergram.info
-          </a>
-        </li>
-        <li>
-          <strong>Company:</strong>
-          <a
-            href="https://www.bebit.co.jp/english/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            https://www.bebit.co.jp/english/
           </a>
         </li>
         <li>

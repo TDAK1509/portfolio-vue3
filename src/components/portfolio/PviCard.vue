@@ -3,8 +3,12 @@
     <template #description>
       <ul class="disc">
         <li>
+          <strong>Project type:</strong>
+          <span class="pvicard__text">Freelancer service.</span>
+        </li>
+        <li>
           <strong>Website:</strong>
-          <span class="pvicard__text"> Project stopped. </span>
+          <span class="pvicard__text">Project stopped. </span>
         </li>
         <li>
           <strong>Github repositories:</strong>

@@ -3,6 +3,10 @@
     <template #description>
       <ul class="disc">
         <li>
+          <strong>Project type:</strong>
+          <span class="wordle-finder__text">Personal project.</span>
+        </li>
+        <li>
           <strong>Website:</strong>
           <a
             href="https://wordle-finder.com"

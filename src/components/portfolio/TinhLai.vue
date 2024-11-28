@@ -3,6 +3,10 @@
     <template #description>
       <ul class="disc">
         <li>
+          <strong>Project type:</strong>
+          <span class="tinh-lai__text">Personal project.</span>
+        </li>
+        <li>
           <strong>Website:</strong>
           <a
             href="https://www.tinhlai.com/en"
