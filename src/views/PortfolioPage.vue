@@ -58,13 +58,17 @@ function toNextPage() {
 }
 .portfolio-page {
   position: relative;
-  height: calc(100% - 40px);
+  height: calc(100% - 20px);
   overflow-y: auto;
 }
 .portfolio-page__footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 1.5em;
 }
 .page-button--hide {
   visibility: hidden;
@@ -73,6 +77,9 @@ function toNextPage() {
 @media only screen and (max-width: 600px) {
   .portfolio-container {
     font-size: 0.8rem;
+  }
+  .portfolio-page__footer {
+    padding: 0 1em;
   }
 }
 /* Slide to the left */
