@@ -93,8 +93,7 @@ import AppPanel from "@/components/AppPanel.vue";
   height: 650px;
   position: relative;
   font-size: 0.9rem;
-  padding: 0;
-  padding-top: 1.5em;
+  padding: 1.5em 0;
 }
 .experiences-page__title {
   line-height: 1;
@@ -105,25 +104,18 @@ import AppPanel from "@/components/AppPanel.vue";
   width: 100%;
   height: calc(100% - 30px - 1.5em);
   position: relative;
-  padding: 1.5em;
-  padding-top: 0;
+  padding: 0 1.5em;
   overflow-y: auto;
 }
-.experiences-page-section::before {
-  content: "";
-  position: absolute;
-  top: 0.5em;
-  left: calc(1.5em + 1px);
-  width: 0;
-  height: 150%;
-  border: 1px solid var(--color-black);
-  opacity: 0.8;
-}
+
 .block {
   text-align: left;
   position: relative;
   padding-left: 1.5em;
   margin-bottom: 3em;
+}
+.block:last-child {
+  margin-bottom: 0em;
 }
 .block::before {
   content: "";
@@ -135,6 +127,16 @@ import AppPanel from "@/components/AppPanel.vue";
   top: 5px;
   left: -5.5px;
   background-color: var(--color-black);
+}
+.block::after {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 1px;
+  width: 0;
+  height: calc(100% + 3em);
+  border: 1px solid var(--color-black);
+  opacity: 0.8;
 }
 .period {
   font-size: 0.8rem;
