@@ -4,7 +4,7 @@
 
     <section class="experiences-page-section">
       <div class="block">
-        <div class="period">Nov 2019 - Feb 2024</div>
+        <div class="period">Nov 2019 - Feb 2025</div>
         <div class="role">Senior frontend web developer</div>
         <div class="company">beBit Inc.</div>
         <div class="description">
@@ -50,7 +50,7 @@
         <div class="period">Jan 2019 - Nov 2019</div>
         <div class="role">Gap period</div>
         <div class="description">
-          <p>Learning VueJS.</p>
+          <p>Learned VueJS.</p>
         </div>
       </div>
 
@@ -59,7 +59,7 @@
 
         <div class="role">Gap period</div>
         <div class="description">
-          <p>Do something else not related to coding.</p>
+          <p>Did something else not related to coding.</p>
         </div>
       </div>
 
@@ -72,8 +72,8 @@
           <ul class="disc">
             <li>Maintaining the E-commerce site.</li>
             <li>
-              Create local tools to improve the productivity of other colleagues
-              for daily repeated tasks.
+              Creating local tools to improve the productivity of other
+              colleagues for daily repeated tasks.
             </li>
           </ul>
           <p>Technologies: PHP, HTML, Javascript, CSS, Excel.</p>
