@@ -117,7 +117,18 @@ import AppPanel from "@/components/AppPanel.vue";
 .block:last-child {
   margin-bottom: 0em;
 }
+
 .block::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 1px;
+  width: 0;
+  height: calc(100% + 3em);
+  border: 1px solid var(--color-black);
+  opacity: 0.8;
+}
+.block::after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -127,16 +138,6 @@ import AppPanel from "@/components/AppPanel.vue";
   top: 5px;
   left: -5.5px;
   background-color: var(--color-black);
-}
-.block::after {
-  content: "";
-  position: absolute;
-  top: 0.5em;
-  left: 1px;
-  width: 0;
-  height: calc(100% + 3em);
-  border: 1px solid var(--color-black);
-  opacity: 0.8;
 }
 .period {
   font-size: 0.8rem;
@@ -163,5 +164,44 @@ import AppPanel from "@/components/AppPanel.vue";
 .description > p {
   margin-top: 1em;
   margin-bottom: 0.3em;
+}
+@media only screen and (max-width: 600px) {
+  .experiences-page {
+    font-size: 0.8rem;
+    padding-top: 1em;
+  }
+  .experiences-page-section {
+    padding: 0 1em;
+  }
+  .experiences-page__title {
+    height: 20px;
+  }
+  .block {
+    padding-left: 1em;
+  }
+  .block::before {
+    top: 1em;
+  }
+  .period {
+    position: relative;
+    inset: auto;
+    padding-top: 0.2em;
+    margin-bottom: 0.5em;
+  }
+  .company,
+  .role {
+    font-size: 0.8rem;
+  }
+  .role {
+    letter-spacing: 0;
+  }
+
+  .description {
+    margin-top: 0.5em;
+  }
+  .description > p {
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+  }
 }
 </style>
