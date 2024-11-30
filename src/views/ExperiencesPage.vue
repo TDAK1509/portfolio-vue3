@@ -13,11 +13,17 @@
           <ul class="disc">
             <li>
               Being the lead engineer of the project of migrating current
-              codebase to micro frontends, including planning the project
-              roadmap, planning the Sprints, deciding project technologies,
-              deciding guidelines for the repository, configuring the repository
-              so that guidelines can be automated followed as much as possible,
-              etc.
+              codebase to micro frontends, which including (but not limited to):
+              <ul class="sub">
+                <li>Planning the project roadmap</li>
+                <li>Planning the Sprints</li>
+                <li>Deciding project technologies</li>
+                <li>Deciding guidelines for the repository</li>
+                <li>
+                  Configuring the repository so that guidelines can be automated
+                  followed as much as possible.
+                </li>
+              </ul>
             </li>
             <li>
               Creating the automated test system (lint, unit test, integration
@@ -25,23 +31,54 @@
               manual testing when deploying, and to make PRs more reliable.
             </li>
             <li>
-              Working on maintaining the company website (adding features, bug
-              fixing, refactoring).
+              Creating tools to make developers' lives easier:
+              <ul class="sub">
+                <li class="usergram__text">
+                  <span>Github action marketplace:</span>
+                  <a
+                    href="https://github.com/marketplace/actions/set-pr-labels-based-on-pr-title"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Set PR labels based on PR title
+                  </a>
+                </li>
+                <li class="usergram__text">
+                  <span>VSCode extension:</span>
+                  <a
+                    href="https://marketplace.visualstudio.com/items?itemName=TDAK1509.with-functions-generator"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    with-functions-generator
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li>Planning the Sprints.</li>
+            <li>
+              Using Github actions and Slack to create a tool for generating an
+              operation checklist for deployment and release, so that developers
+              can just copy & paste from the checklist to perform their
+              releases.
+            </li>
+            <li>
+              Developing the company website when receiving requests from design
+              team.
+            </li>
           </ul>
 
           <p>Technologies used:</p>
 
           <ul class="disc">
             <li>
-              Frontend technologies: Vue, Typescript, SASS, Micro Frontends
+              Frontend technologies: Vue, Typescript, SASS, Storybook, Micro
+              Frontends
             </li>
             <li>
               Backend technologies: Django, Python, Docker, Terraform, AWS
             </li>
             <li>Lint & test: Eslint, Jest, Cypress, RegSuit</li>
-            <li>Tools: Github Actions, Vite, Turborepo, Sentry</li>
+            <li>Tools: Github Actions, Vite, Turborepo, Sentry.</li>
           </ul>
         </div>
       </div>

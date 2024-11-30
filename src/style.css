@@ -51,6 +51,12 @@ ul.disc {
 ul.disc > li {
   list-style-type: disc;
 }
+ul.sub {
+  margin-left: 1em;
+}
+ul.sub > li {
+  list-style-type: circle;
+}
 
 a {
   font-style: none;

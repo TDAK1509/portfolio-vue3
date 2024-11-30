@@ -115,10 +115,4 @@ const images = [
 .pvicard__text {
   margin-left: 0.3em;
 }
-.sub {
-  margin-left: 1em;
-}
-.sub > li {
-  list-style-type: circle;
-}
 </style>
