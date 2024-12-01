@@ -18,13 +18,13 @@
           placeholder="search for skills"
           class="form__input"
         />
-        <button class="form__button">
+        <button class="form__button" disabled>
           <SvgSearch class="form__button-icon" />
         </button>
       </form>
 
       <ul class="skills-page__skills">
-        <li class="technology" v-for="name in technologies" :key="name">
+        <li class="technology" v-for="name in technologiesToDislay" :key="name">
           <img class="technology-icon" :src="getImageSrc(name)" :alt="name" />
           <div class="technology-text">{{ name.split("-").join(" ") }}</div>
         </li>
@@ -36,13 +36,7 @@
 <script setup>
 import AppPanel from "@/components/AppPanel.vue";
 import SvgSearch from "@/components/svgs/SvgSearch.vue";
-import { ref } from "vue";
-
-const searchText = ref("");
-
-function search() {
-  console.log(searchText.value);
-}
+import { ref, computed } from "vue";
 
 const technologies = [
   "vue",
@@ -69,6 +63,18 @@ const technologies = [
   "react",
   "firebase",
 ];
+
+const searchText = ref("");
+
+const technologiesToDislay = computed(() => {
+  if (!searchText.value) return technologies;
+  const searchTextLowerCase = searchText.value
+    .replace(" ", "-")
+    .toLocaleLowerCase();
+  return technologies.filter(technology =>
+    technology.includes(searchTextLowerCase)
+  );
+});
 
 function getImageSrc(name) {
   if (name === "micro-frontends")
