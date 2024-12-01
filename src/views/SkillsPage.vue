@@ -6,7 +6,7 @@
         <li>Communicating</li>
         <li>Leading</li>
         <li>Planning</li>
-        <li>Time management</li>
+        <li>Time managing</li>
       </ul>
 
       <h4 class="section__title">Dev skills</h4>
@@ -161,6 +161,7 @@ function getImageSrc(name) {
   .skills-page {
     font-size: 0.8rem;
     padding-top: 1em;
+    height: 80vh;
   }
   .skills-page-section {
     padding: 0 1em;
