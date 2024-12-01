@@ -12,7 +12,12 @@
       <h4 class="section__title">Dev skills</h4>
 
       <form class="skills-page__form" @submit.prevent="search">
-        <input v-model="searchText" type="text" class="form__input" />
+        <input
+          v-model="searchText"
+          type="text"
+          placeholder="search for skills"
+          class="form__input"
+        />
         <button class="form__button">
           <SvgSearch class="form__button-icon" />
         </button>
@@ -75,10 +80,10 @@ function getImageSrc(name) {
 <style scoped>
 .skills-page {
   height: 500px;
+  overflow-y: auto;
 }
 .skills-page-section {
   width: 100%;
-  height: 100%;
   position: relative;
   text-align: left;
 }
