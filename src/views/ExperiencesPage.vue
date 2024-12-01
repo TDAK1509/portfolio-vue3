@@ -124,7 +124,6 @@ import AppPanel from "@/components/AppPanel.vue";
 
 <style scoped>
 .experiences-page {
-  margin-bottom: 2em;
   height: 650px;
   position: relative;
   font-size: 0.9rem;

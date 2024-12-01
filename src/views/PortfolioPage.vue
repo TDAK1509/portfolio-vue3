@@ -51,7 +51,6 @@ function toNextPage() {
 
 <style scoped>
 .portfolio-container {
-  margin-bottom: 2em;
   height: 650px;
   position: relative;
   font-size: 0.9rem;

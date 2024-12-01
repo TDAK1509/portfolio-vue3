@@ -38,8 +38,6 @@ import MenuBar from "@/components/MenuBar.vue";
 
 @media only screen and (max-width: 600px) {
   .app {
-    padding-bottom: 2em;
-    padding-top: 5em;
     font-size: 11pt;
   }
   .app__menu-bar {
