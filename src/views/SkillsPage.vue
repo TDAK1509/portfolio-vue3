@@ -13,7 +13,9 @@
 
       <form class="skills-page__form" @submit.prevent="search">
         <input v-model="searchText" type="text" class="form__input" />
-        <button class="form__button">Search</button>
+        <button class="form__button">
+          <SvgSearch class="form__button-icon" />
+        </button>
       </form>
 
       <ul class="skills-page__skills">
@@ -28,6 +30,7 @@
 
 <script setup>
 import AppPanel from "@/components/AppPanel.vue";
+import SvgSearch from "@/components/svgs/SvgSearch.vue";
 import { ref } from "vue";
 
 const searchText = ref("");
@@ -114,5 +117,34 @@ function getImageSrc(name) {
   text-transform: capitalize;
   font-size: 0.8rem;
   white-space: nowrap;
+}
+.skills-page__form {
+  position: relative;
+  margin-bottom: 1em;
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  border: 1px solid var(--color-grey-light);
+  border-radius: 7px;
+  width: 200px;
+}
+.form__input {
+  border: none;
+  font-size: 1rem;
+  color: var(--color-grey);
+  width: 85%;
+}
+.form__button {
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  transform: translateY(-50%);
+  background-color: var(--color-white);
+  color: var(--color-grey);
+  display: flex;
+  align-items: center;
+}
+.form__button-icon {
+  width: 24px;
+  height: 24px;
 }
 </style>
