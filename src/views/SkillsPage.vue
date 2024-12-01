@@ -11,17 +11,17 @@
 
       <h4 class="section__title">Dev skills</h4>
 
-      <form class="skills-page__form" @submit.prevent="search">
+      <div class="skills-page__form">
         <input
           v-model="searchText"
           type="text"
           placeholder="search for skills"
           class="form__input"
         />
-        <button class="form__button" disabled>
-          <SvgSearch class="form__button-icon" />
+        <button class="form__button" type="button" @click="clearSearch">
+          <SvgClose class="form__button-icon" />
         </button>
-      </form>
+      </div>
 
       <ul class="skills-page__skills">
         <li class="technology" v-for="name in technologiesToDislay" :key="name">
@@ -35,7 +35,7 @@
 
 <script setup>
 import AppPanel from "@/components/AppPanel.vue";
-import SvgSearch from "@/components/svgs/SvgSearch.vue";
+import SvgClose from "@/components/svgs/SvgClose.vue";
 import { ref, computed } from "vue";
 
 const technologies = [
@@ -75,6 +75,10 @@ const technologiesToDislay = computed(() => {
     technology.includes(searchTextLowerCase)
   );
 });
+
+function clearSearch() {
+  searchText.value = "";
+}
 
 function getImageSrc(name) {
   if (name === "micro-frontends")
@@ -159,8 +163,8 @@ function getImageSrc(name) {
   align-items: center;
 }
 .form__button-icon {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 
 @media only screen and (max-width: 600px) {
