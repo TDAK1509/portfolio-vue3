@@ -81,9 +81,13 @@ function getImageSrc(name) {
 .skills-page {
   height: 500px;
   overflow-y: auto;
+  padding: 1.5em 0;
 }
 .skills-page-section {
   width: 100%;
+  height: calc(100% - 30px - 1.5em);
+  padding: 0 1.5em;
+  overflow-y: auto;
   position: relative;
   text-align: left;
 }
@@ -107,11 +111,11 @@ function getImageSrc(name) {
 .technology {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.3em;
   border-radius: 8px;
   border: 1px solid var(--color-grey-light);
   background-color: var(--color-white);
-  padding: 0.4em 1em;
+  padding: 0.4em 0.7em;
   color: var(--color-black);
 }
 .technology-icon {
@@ -120,7 +124,7 @@ function getImageSrc(name) {
 }
 .technology-text {
   text-transform: capitalize;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   white-space: nowrap;
 }
 .skills-page__form {
@@ -134,7 +138,7 @@ function getImageSrc(name) {
 }
 .form__input {
   border: none;
-  font-size: 1rem;
+  font-size: 1em;
   color: var(--color-grey);
   width: 85%;
 }
@@ -151,5 +155,30 @@ function getImageSrc(name) {
 .form__button-icon {
   width: 24px;
   height: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .skills-page {
+    font-size: 0.8rem;
+    padding-top: 1em;
+  }
+  .skills-page-section {
+    padding: 0 1em;
+  }
+  .section__title {
+    font-size: 0.9rem;
+  }
+  .skills-page__form {
+    padding: 0.3em 0.5em;
+    width: 100%;
+  }
+  .skills-page__skills {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+  }
+  .technology {
+    gap: 0.5em;
+  }
 }
 </style>
