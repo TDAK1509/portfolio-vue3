@@ -1,7 +1,5 @@
 <template>
-  <AppPanel class="experiences-page">
-    <h3 class="experiences-page__title">My work experiences</h3>
-
+  <AppPanel class="experiences-page" title="My work experiences">
     <section class="experiences-page-section">
       <div class="block">
         <div class="period">Nov 2019 - Feb 2025</div>
@@ -132,11 +130,6 @@ import AppPanel from "@/components/AppPanel.vue";
   font-size: 0.9rem;
   padding: 1.5em 0;
 }
-.experiences-page__title {
-  line-height: 1;
-  color: var(--color-orange);
-  height: 40px;
-}
 .experiences-page-section {
   width: 100%;
   height: calc(100% - 30px - 1.5em);
@@ -209,9 +202,6 @@ import AppPanel from "@/components/AppPanel.vue";
   }
   .experiences-page-section {
     padding: 0 1em;
-  }
-  .experiences-page__title {
-    height: 20px;
   }
   .block {
     padding-left: 1em;
