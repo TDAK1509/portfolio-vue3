@@ -31,7 +31,7 @@
         <li>
           <strong>Description:</strong>
           <span class="wordle-finder__text">
-            A tool for helping playing the Wordle game.
+            Designed a tool to assist with playing the Wordle game.
           </span>
         </li>
 
