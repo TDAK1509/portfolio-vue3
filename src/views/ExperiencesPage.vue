@@ -6,27 +6,38 @@
         <div class="role">Senior frontend web developer</div>
         <div class="company">beBit Inc.</div>
         <div class="description">
-          <p>Responsibilities:</p>
+          <p class="description__title">Responsibilities:</p>
 
           <ul class="disc">
             <li>
-              Being the lead engineer of the project of migrating current
-              codebase to micro frontends, which including (but not limited to):
-              <ul class="sub">
-                <li>Planning the project roadmap</li>
-                <li>Planning the Sprints</li>
-                <li>Deciding project technologies</li>
-                <li>Deciding guidelines for the repository</li>
-                <li>
-                  Configuring the repository so that guidelines can be automated
-                  followed as much as possible.
-                </li>
-              </ul>
+              Led the migration of a Vue2 monolithic codebase to a Vue3
+              microfrontend architecture, enhancing scalability and
+              maintainability.
             </li>
             <li>
-              Creating the automated test system (lint, unit test, integration
-              test, regression test, e2e test, CIs) for the repository to reduce
-              manual testing when deploying, and to make PRs more reliable.
+              Implemented automated tests and CI systems for the front end,
+              reducing release time from 30-60 minutes to 10-15 minutes.
+            </li>
+            <li>
+              Developed a semi-automated release process, improving release
+              quality and efficiency, enabling multiple small releases per
+              sprint instead of a single large release.
+            </li>
+            <li>
+              Documented the front-end onboarding process, streamlining
+              developer onboarding and reducing reliance on direct support.
+            </li>
+            <li>
+              Mentored team members by resolving challenges, fostering
+              collaboration, and enhancing overall project efficiency.
+            </li>
+            <li>
+              Reviewed 100-200 PRs per quarter, maintaining code quality through
+              thorough code reviews.
+            </li>
+            <li>
+              Contributed 50-100 PRs per quarter, driving feature development
+              and improving the codebase.
             </li>
             <li>
               Creating tools to make developers' lives easier:
@@ -53,24 +64,14 @@
                 </li>
               </ul>
             </li>
-            <li>
-              Using Github actions and Slack to create a tool for generating an
-              operation checklist for deployment and release, so that developers
-              can just copy & paste from the checklist to perform their
-              releases.
-            </li>
-            <li>
-              Developing the company website when receiving requests from design
-              team.
-            </li>
           </ul>
 
-          <p>Technologies used:</p>
+          <p class="description__title">Technologies used:</p>
 
           <ul class="disc">
             <li>
-              Frontend technologies: Vue, Typescript, SASS, Storybook, Micro
-              Frontends
+              Frontend technologies: Vue2, Vue3, Vuex, Typescript, SCSS,
+              Storybook, Micro Frontends
             </li>
             <li>
               Backend technologies: Django, Python, Docker, Terraform, AWS
@@ -82,19 +83,18 @@
       </div>
 
       <div class="block">
-        <div class="period">Jan 2019 - Nov 2019</div>
-        <div class="role">Gap period</div>
-        <div class="description">
-          <p>Learned VueJS.</p>
-        </div>
-      </div>
+        <div class="period">2016 - Nov 2019</div>
 
-      <div class="block">
-        <div class="period">2016 - 2018</div>
-
-        <div class="role">Gap period</div>
+        <div class="role">Self-Learning and Career Transition</div>
         <div class="description">
-          <p>Did something else not related to coding.</p>
+          <ul class="disc">
+            <li>Pursued non-technical roles.</li>
+            <li>
+              Dedicated one year to learning programming fundamentals and
+              mastering VueJS, transitioning into a front-end development
+              career.
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -103,15 +103,39 @@
         <div class="role">Product executive</div>
         <div class="company">Zalora Vietnam</div>
         <div class="description">
-          <p>Responsibilities:</p>
+          <p class="description__title">Responsibilities:</p>
           <ul class="disc">
-            <li>Maintaining the E-commerce site.</li>
             <li>
-              Creating local tools to improve the productivity of other
-              colleagues for daily repeated tasks.
+              Developed local automation tools that enhanced daily task
+              efficiency for colleagues, reducing task completion time from 1-3
+              hours to just 15-30 minutes.
+            </li>
+            <li>
+              Managed the company's e-commerce website using a dashboard
+              provided by the parent company in Singapore, ensuring smooth
+              operations and timely updates.
+            </li>
+            <li>
+              Implemented interactive mini JavaScript web games to support
+              campaign launches, boosting user engagement and campaign
+              effectiveness.
+            </li>
+            <li>
+              Converted Photoshop designs into responsive and optimized HTML
+              code for seamless integration on the company website.
             </li>
           </ul>
-          <p>Technologies: PHP, HTML, Javascript, CSS, Excel.</p>
+          <p class="description__title">
+            Technologies: PHP, HTML, Javascript, CSS, Excel.
+          </p>
+          <ul class="disc">
+            <li>PHP</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>MySQL</li>
+            <li>JavaScript</li>
+            <li>Excel</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -194,6 +218,10 @@ import AppPanel from "@/components/AppPanel.vue";
   margin-top: 1em;
   margin-bottom: 0.3em;
 }
+.description__title {
+  font-weight: 500;
+}
+
 @media only screen and (max-width: 600px) {
   .experiences-page {
     font-size: 0.8rem;
