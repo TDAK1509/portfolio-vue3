@@ -3,10 +3,12 @@
     <section class="skills-page-section">
       <h4 class="section__title">Soft skills</h4>
       <ul class="disc section__soft-skills">
-        <li>Communicating</li>
-        <li>Leading</li>
+        <li>Communication</li>
+        <li>Leadership</li>
         <li>Planning</li>
-        <li>Time managing</li>
+        <li>Time management</li>
+        <li>Coaching</li>
+        <li>Proactive</li>
       </ul>
 
       <h4 class="section__title">Dev skills</h4>
@@ -115,8 +117,8 @@ function getImageSrc(name) {
 }
 .section__soft-skills {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 400px;
+  grid-template-columns: repeat(3, auto);
+  max-width: 450px;
 }
 .technology {
   display: flex;
@@ -178,6 +180,10 @@ function getImageSrc(name) {
   }
   .section__title {
     font-size: 0.9rem;
+  }
+  .section__soft-skills {
+    grid-template-columns: repeat(2, auto);
+    max-width: 100%;
   }
   .skills-page__form {
     padding: 0.3em 0.5em;
