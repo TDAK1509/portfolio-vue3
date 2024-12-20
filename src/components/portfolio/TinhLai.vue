@@ -31,7 +31,8 @@
         <li>
           <strong>Description:</strong>
           <span class="tinh-lai__text"
-            >A multilingual tool for calculating compound interest.</span
+            >Developed a multilingual compound interest calculator to learn
+            Tailwind CSS.</span
           >
         </li>
 
