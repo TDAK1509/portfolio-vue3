@@ -31,37 +31,68 @@
         </li>
         <li>
           <strong>Technologies I worked with:</strong>
-          <span class="usergram__text"
-            >Vue, Django, Cypress, Jest, Docker, AWS, Terraform, Sentry, Github
-            Actions, Micro Frontends, Micro Services.</span
-          >
+          <span class="usergram__text">
+            Vue2, Vuex, Vue3, Django, Cypress, Jest, Docker, AWS, Terraform,
+            Sentry, Github Actions, Micro Frontends, Micro Services.
+          </span>
         </li>
         <li>
-          <strong>Others:</strong>
-          <span>
-            created some extensions/plugins to help daily work, and to help
-            other teammates follow code guidelines.
-          </span>
+          <strong>My role:</strong>
           <ul class="sub">
-            <li class="usergram__text">
-              <span>Github action marketplace:</span>
-              <a
-                href="https://github.com/marketplace/actions/set-pr-labels-based-on-pr-title"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Set PR labels based on PR title
-              </a>
+            <li>
+              Led the migration of a Vue2 monolithic codebase to a Vue3
+              microfrontend architecture, enhancing scalability and
+              maintainability.
             </li>
-            <li class="usergram__text">
-              <span>VSCode extension:</span>
-              <a
-                href="https://marketplace.visualstudio.com/items?itemName=TDAK1509.with-functions-generator"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                with-functions-generator
-              </a>
+            <li>
+              Implemented automated tests and CI systems for the front end,
+              reducing release time from 30-60 minutes to 10-15 minutes.
+            </li>
+            <li>
+              Developed a semi-automated release process, improving release
+              quality and efficiency, enabling multiple small releases per
+              sprint instead of a single large release.
+            </li>
+            <li>
+              Documented the front-end onboarding process, streamlining
+              developer onboarding and reducing reliance on direct support.
+            </li>
+            <li>
+              Mentored team members by resolving challenges, fostering
+              collaboration, and enhancing overall project efficiency.
+            </li>
+            <li>
+              Reviewed 100-200 PRs per quarter, maintaining code quality through
+              thorough code reviews.
+            </li>
+            <li>
+              Contributed 50-100 PRs per quarter, driving feature development
+              and improving the codebase.
+            </li>
+            <li>
+              Creating tools to make developers' lives easier:
+              <ul class="sub">
+                <li class="usergram__text">
+                  <span>Github action marketplace:</span>
+                  <a
+                    href="https://github.com/marketplace/actions/set-pr-labels-based-on-pr-title"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Set PR labels based on PR title
+                  </a>
+                </li>
+                <li class="usergram__text">
+                  <span>VSCode extension:</span>
+                  <a
+                    href="https://marketplace.visualstudio.com/items?itemName=TDAK1509.with-functions-generator"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    with-functions-generator
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </li>
