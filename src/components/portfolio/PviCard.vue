@@ -46,24 +46,27 @@
           <strong>Description:</strong>
           <ul class="sub">
             <li class="pvicard__text">
-              A tool for customers to activate their purchased insurances.
+              Developed a tool for customers to activate purchased insurance
+              policies.
             </li>
             <li class="pvicard__text">
-              Has an admin dashboard to manage the available insurance codes for
-              activation.
+              Built a user interface with Django for seamless customer
+              interaction.
             </li>
             <li class="pvicard__text">
-              Has a cronjob that connects with Lazada API to search for items
-              that are purchased on Lazada and disable them from the project
-              database.
+              Designed an admin dashboard in Django for efficient database
+              management.
+            </li>
+            <li class="pvicard__text">
+              Created a Python cron job to integrate with the Lazada API, fetch
+              purchased items, and update their status in the database using API
+              keys provided by the Django backend.
+            </li>
+            <li class="pvicard__text">
+              Deployed the website using Docker and Nginx on DigitalOcean for
+              reliable hosting.
             </li>
           </ul>
-        </li>
-        <li>
-          <strong>Technologies I worked with:</strong>
-          <span class="pvicard__text">
-            Django, Python, Docker, DigitalOcean.
-          </span>
         </li>
       </ul>
     </template>
