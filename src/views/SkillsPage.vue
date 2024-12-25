@@ -16,6 +16,7 @@
       <div class="skills-page__form">
         <input
           v-model="searchText"
+          ref="inputRef"
           type="text"
           placeholder="search for skills"
           class="form__input"
@@ -38,7 +39,15 @@
 <script setup>
 import AppPanel from "@/components/AppPanel.vue";
 import SvgClose from "@/components/svgs/SvgClose.vue";
-import { ref, computed } from "vue";
+import { ref, computed, onMounted, nextTick } from "vue";
+
+const inputRef = ref();
+
+onMounted(() => {
+  nextTick(() => {
+    if (inputRef.value) inputRef.value.focus();
+  });
+});
 
 const technologies = [
   "vue",
@@ -164,11 +173,22 @@ function getImageSrc(name) {
   border-radius: 7px;
   width: 200px;
 }
+.skills-page__form:has(.form__input:focus) {
+  outline: 2px solid var(--color-orange);
+}
 .form__input {
   border: none;
   font-size: 1em;
   color: var(--color-grey);
   width: 85%;
+}
+.form__input::placeholder {
+  color: var(--color-grey-light);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.form__input:focus {
+  outline: none;
 }
 .form__button {
   position: absolute;
