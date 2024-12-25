@@ -42,14 +42,19 @@ import { ref, computed } from "vue";
 
 const technologies = [
   "vue",
+  "nuxt",
   "javascript",
   "typescript",
   "css",
+  "scss",
+  "tailwind-css",
   "html",
   "nodejs",
+  "express",
   "eslint",
   "jest",
   "cypress",
+  "storybook",
   "docker",
   "git",
   "github-actions",
@@ -63,8 +68,14 @@ const technologies = [
   "nginx",
   "terraform",
   "react",
+  "php",
   "firebase",
   "mongo-db",
+  "sentry",
+  "socket.io",
+  "chrome-extensions",
+  "jira",
+  "flutter",
 ];
 
 const searchText = ref("");
@@ -86,13 +97,17 @@ function clearSearch() {
 function getImageSrc(name) {
   if (name === "micro-frontends")
     return new URL(`../assets/technologies/${name}.png`, import.meta.url).href;
-  return new URL(`../assets/technologies/${name}.svg`, import.meta.url).href;
+  else if (name === "socket.io")
+    return new URL(`../assets/technologies/socket-io.svg`, import.meta.url)
+      .href;
+  else
+    return new URL(`../assets/technologies/${name}.svg`, import.meta.url).href;
 }
 </script>
 
 <style scoped>
 .skills-page {
-  height: 500px;
+  height: 550px;
   overflow-y: auto;
   padding: 1.5em 0;
 }
