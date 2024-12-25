@@ -64,6 +64,7 @@ const technologies = [
   "terraform",
   "react",
   "firebase",
+  "mongo-db",
 ];
 
 const searchText = ref("");
