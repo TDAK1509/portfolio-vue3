@@ -25,11 +25,18 @@ import TinhLai from "@/components/portfolio/TinhLai.vue";
 import BebitUsergram from "@/components/portfolio/BebitUsergram.vue";
 import PviCard from "@/components/portfolio/PviCard.vue";
 import WordleFinder from "@/components/portfolio/WordleFinder.vue";
+import PlanningPoker from "@/components/portfolio/PlanningPoker.vue";
 import PreviousPageButton from "@/components/PreviousPageButton.vue";
 import NextPageButton from "@/components/NextPageButton.vue";
 import { ref } from "vue";
 
-const projectComponents = [BebitUsergram, TinhLai, PviCard, WordleFinder];
+const projectComponents = [
+  BebitUsergram,
+  PviCard,
+  PlanningPoker,
+  TinhLai,
+  WordleFinder,
+];
 const maxPages = projectComponents.length - 1;
 
 const page = ref(0);
